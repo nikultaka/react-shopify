@@ -1,0 +1,213 @@
+/* Extra small devices (portrait phones, less than 576px) */ 
+@media(min-width: 320px) and (max-width: 575px) {    
+    .header_menu{
+        display: none;
+    }
+    .hero_txt h1 {
+        font-size: 44px;
+    }
+    .hero_txt p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    br{
+        display: none;
+    }
+    .hero_bttn a:first-child {
+        padding: 14px 36px;
+    }
+    .see_on_txt {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .sidebar_img .nav {
+        flex-direction: row!important;
+        margin-bottom: 15px;
+    }
+    .sidebar_img a {
+        display: inline-block;
+    }
+    .sidebar_img a{
+        width: 19%;
+        margin: 0 10px;
+    }
+    .product_feat_wrap{
+        display: none;
+    }
+    .product_buy_txt_wrap{
+        margin-top: 30px;
+    }
+    .price_box_wrap{
+        flex-direction: column;
+    }
+    .price_box_wrap h4{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .price_midle_txt{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .product_pick_wrap .media{
+        padding: 12px;
+    }
+    .product_pick_wrap .media .mt_3{
+        margin-right: 10px;
+    }
+    .product_pick_wrap .media h6, .price_box_wrap .media h6{
+        font-size: 17px;
+    }
+    .product_buy_count_wrap{
+        display: none;
+    }
+    
+    .margin_left_2{
+        margin-bottom: 15px;
+    }
+    .margin_left_2,
+    .margin_left{
+        margin-left: 0;
+    }
+    .why_we_table table{
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .nutriniotn_head h2{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .slidPrv_1{
+        left: 0;
+    }
+    .slidNext_1{
+        right: 0;
+    }
+    .overall_rating_wrap{
+        margin-bottom: 25px;
+    }
+    .overall_rating_img{
+        margin-bottom: 25px;
+    }
+    .review_box_lft{
+        margin-left: 0px;
+    }
+    .write_review h6{
+        font-size: 14px;
+    }
+    .faq_txt_wrap .card .card-header button{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .faq_txt_wrap .card button i {
+        width: 41px;
+    }
+    .faq_txt_wrap .card button h6{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .sign_up_lft_wrap{
+        padding-top: 150px;
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+    .sign_up_lft_wrap h4{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .instagram_btn{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .instagram_posts a img{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .get_start_wrap{
+        padding: 25px;
+    }
+    .ftr_logo{
+        margin-bottom: 25px;
+    }
+    .ftr_links{
+        margin-top: 25px;
+    }
+    .paoyment_method,
+    .ftr_country{
+        text-align: center;
+    }
+    .header_section{
+        display: none;
+    }
+    .hero_section{
+        background-image: url(../images/mobile_hero.png);
+    }
+    .mobile_menu_sec .iconss img{
+        width: 35px;
+    }
+    .mobile_menu_sec{
+        padding-top: 15px;
+        border-bottom: 1px solid #5e64689f;
+        padding-bottom: 15px;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
+    .newClass .iconss a img{
+        filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important;
+    }
+    .mobile_sticky{
+        position: fixed;
+        left: 0;
+        bottom: 1px;
+        background-color: #fff;
+        width: 100%;
+    }
+    .mobile_sticky .quantity{
+        width: 150px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #000;
+        padding: 8px 20px;
+    }
+    .mobile_sticky .quantity input{
+        width: 100%;
+        border: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    .mobile_sticky a{
+        background: #3EB49C;
+        border: 1px solid #227362;
+        box-sizing: border-box;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: #FFFFFF;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 6px 25px;
+        font-family: Satoshi-Bold;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+      
+}
+
+/* Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+       
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

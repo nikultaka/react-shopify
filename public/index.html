@@ -1,43 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home - Page</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- favicon Start -->
+  <link rel="icon" href="%PUBLIC_URL%/assets/images/favicon.png">
+  <!-- favicon end -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Default Css file Start -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/slick.css">
+  <!-- Default Css file end -->
+
+  <!-- Plugin Css file Start -->
+
+  <!-- Plugin Css file end -->
+
+  <!-- Custom Css file Start -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/responsive.css">
+  <!-- Custom Css file Start -->
+
+</head>
+
+<body>
+  <div id="root"></div>
+
+
+  <!-- default js file Start -->
+  <script src="%PUBLIC_URL%/assets/js/jquery.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/popper.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/slick.min.js"></script>
+  <!-- default js file end -->
+
+  <!-- plugin js file start -->
+  <script>
+    let cards = [...document.querySelectorAll(".card")];
+    cards.forEach(card => {
+      card.addEventListener("click", function () {
+        cards.forEach(c => c.classList.remove("show"));
+        this.classList.add("show")
+
+      })
+    });
+
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      const minus = $('.quantity__minus');
+      const plus = $('.quantity__plus');
+      const input = $('.quantity__input');
+      minus.click(function (e) {
+        e.preventDefault();
+        var value = input.val();
+        if (value > 1) {
+          value--;
+        }
+        input.val(value);
+      });
+
+      plus.click(function (e) {
+        e.preventDefault();
+        var value = input.val();
+        value++;
+        input.val(value);
+      })
+    });
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 10) {
+        $('.header_section').addClass('newClass');
+      } else {
+        $('.header_section').removeClass('newClass');
+      }
+    });
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 10) {
+        $('.mobile_menu_sec').addClass('newClass');
+      } else {
+        $('.mobile_menu_sec').removeClass('newClass');
+      }
+    });
+  </script>
+  <!-- plugin js file end -->
+
+  <!-- Custom js file Start -->
+  <script src="%PUBLIC_URL%/assets/js/custom.js"></script>
+  <!-- Custom js file end -->
+</body>
+
 </html>

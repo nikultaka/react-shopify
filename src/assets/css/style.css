@@ -1,0 +1,1223 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+ol,
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+ul li{
+	color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+i,
+span,
+input{
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,h6{
+  color: #000;
+}
+a,
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+
+
+@font-face {
+    font-family: Satoshi-Black;
+    src: url(../fonts/satoshi/Satoshi-Black.ttf);
+}
+@font-face {
+    font-family: Satoshi-Bold;
+    src: url(../fonts/satoshi/Satoshi-Bold.ttf);
+}
+@font-face {
+    font-family: Satoshi-Italic;
+    src: url(../fonts/satoshi/Satoshi-Italic.ttf);
+}
+@font-face {
+    font-family: Satoshi-Medium;
+    src: url(../fonts/satoshi/Satoshi-Medium.ttf);
+}
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url(../fonts/satoshi/Satoshi-Regular.ttf);
+}
+@font-face {
+    font-family: Satoshi-Light;
+    src: url(../fonts/satoshi/Satoshi-Light.ttf);
+}
+
+/*header css  start */
+.hero_section{
+    background-image: url(../images/hero_bg.png);
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.header_section{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.header_menu{
+    margin-top: 30px;
+}
+.header_menu ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+.header_menu ul li a{
+    font-style: normal;
+     font-family: Satoshi-Bold;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header_logo{
+    text-align: center;
+    margin-top: 15px;
+}
+.header_logo img{
+    width: 140px;
+}
+.header_profiles{
+    margin-top: 25px;
+    text-align: right;
+}
+.header_profiles ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.header_profiles ul li a img{
+    width: 26px;
+}
+/*header css  end*/
+
+/* hero css start */
+.hero_txt{
+    padding-top: 140px;
+}
+.hero_txt h6{
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    padding: 12px 20px;
+    display: inline-block;
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 18.9555px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.hero_txt h1{
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 70px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding: 20px 0px;
+}
+.hero_txt p{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 18.9555px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.76);
+}
+.hero_bttn a:first-child{
+    background: #3EB49C;
+    border-radius: 4.30807px;
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 16.0036px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom: 5px solid #266C5E;
+    display: inline-block;
+    padding: 14px 50px;
+    margin-right: 15px;
+    transition: all linear .3s;
+}
+.hero_bttn a:first-child:hover{
+    background-color: #266C5E;
+}
+.hero_bttn a:last-child{
+    background: transparent;
+    border-radius: 4.30807px;
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 16.0036px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    padding: 14px 50px;
+    transition: all linear .3s;
+}
+.hero_bttn a:last-child:hover{
+    background-color: #3EB49C;
+    border-color: #266C5E;
+}
+
+.see_on{
+    background: #E4FFF2;
+    border: 1px solid rgba(28, 70, 73, 0.1);
+    box-sizing: border-box;
+    padding: 30px 0px;
+}
+.see_on_txt h6{
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 14.9484px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: #1C4649;
+}
+.see_on_txt_2 h6{
+    color: rgba(28, 70, 73, 0.513);
+}
+/* hero css end */
+
+/* nutrition css start */
+.nutrition_section{
+    padding: 60px 0px;
+}
+.nutriniotn_head{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nutriniotn_head h2{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 36px;
+    line-height: 49px;
+    font-feature-settings: 'liga' off;
+    color: #1C4649;
+    margin-bottom: 5px;
+}
+.nutriniotn_head p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(28, 70, 73, 0.746);
+    position: relative;
+}
+
+.nutrition_feat_box{
+    background: #FFFFFF;
+    border: 1.86667px solid rgba(60, 60, 60, 0.25);
+    box-sizing: border-box;
+    border-radius: 23.3333px;
+    padding: 15px;
+    display: inline-block;
+}
+.nutrition_feat_box .media img{
+    margin-right: 15px;
+}
+.nutrition_feat_box .media h6{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 20.5333px;
+    line-height: 28px;
+    color: #3C3C3C;
+}
+.nutrition_feat_box .media p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.514);
+}
+.placed_img img{
+    width: 35%;
+}
+.margin_btm{
+    margin-bottom: 40px;
+}
+.margin_left{
+    margin-left: 80px;
+}
+.margin_left_2{
+    margin-left: 50px;
+}
+.nutrition_txt_wrap{
+    background-image: url(../images/glow_grow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 50px;
+}
+/* nutrition css end */
+
+/* why css start */
+.whywe_better_sec{
+    background: linear-gradient(180deg, #EFFFF7 0%, #FFFFFF 39.69%, #EFFFF7 100%);
+    padding: 60px 0px;
+}
+.why_we_table table{
+    width: 100%;
+}
+.why_we_table table tr th,
+.why_we_table table tr td{
+    border-bottom: 1px solid rgba(60, 60, 60, 0.25);
+    text-align: center;
+}
+.why_we_table table tr td:first-child{
+    text-align: left;
+}
+.why_we_table table tr th{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 175%;
+    color: #1C4649;
+    text-align: center;
+}
+.why_we_table table tr td{
+    font-family: Satoshi-Medium;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1C4649;
+}
+.why_we_table table tr th:nth-child(2){
+    text-align: center;
+}
+.why_we_table table tr th:nth-child(2),
+.why_we_table table tr td:nth-child(2) {
+    padding-left: 0;
+    border-color: #3E9C89;
+}
+.why_we_table table tr td:nth-child(2) span{
+    background: #3EB49C;
+    border-left: 9px solid #3E9C89;
+    border-right: 9px solid #3E9C89;
+    display: block;
+    padding: 25px 0px;
+}
+.why_we_table table tr th:nth-child(2) span{
+    padding-top: 15px;
+    background: #3EB49C;
+    border: 9px solid #3E9C89;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 0px;
+    display: block;
+    padding: 25px 0px;
+}
+.why_we_table table tr th:nth-child(2) span img{
+    width: 150px;
+}
+.why_we_table table tr i{
+    font-size: 20px;
+    color: #fff;
+}
+.why_we_table table tr:last-child td{
+    border-bottom: 0px!important;
+}
+/* why css end */
+
+.slider_section{
+    padding: 60px 0px;
+}
+.vdo_sliders{
+    text-align: center;
+}
+.vdo_sliders a{
+    width: 35%;
+    display: inline-block;
+    margin: 0 1.5%;
+}
+
+.faq_section,
+.aboutus_section{
+    background: linear-gradient(180deg, #EFFFF7 0%, #FFFFFF 39.69%, #EFFFF7 100%);
+    padding: 60px 0px;
+}
+.youtube_vdo_embaded_txt h3{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 42px;
+    line-height: 57px;
+    color: #1C4649;
+    margin-bottom: 10px;
+}
+.youtube_vdo_embaded_txt p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(28, 70, 73, 0.746);
+}
+
+/* faq css start */
+.faq_txt_wrap .card .card-header{
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-radius: 0px;
+}
+.faq_txt_wrap .card .card-header button{
+    padding-left: 25px;
+    padding-right: 15px;
+    display: block;
+    width: 100%;
+}
+.faq_txt_wrap .card .card-header button:focus-within{
+    box-shadow: none!important;
+}
+.faq_txt_wrap .card .card-header button span{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq_txt_wrap .card {
+    margin-bottom: 20px;
+    border: 3px solid #3EB49C!important;
+    padding: 12px 0px;
+    background: #3EB49C!important;
+    border-radius: 10px!important;
+}
+.faq_txt_wrap .card .card-body p{
+    color: rgba(11, 80, 67, 0.75);
+    font-size: 17px;
+    line-height: 32px;
+    text-align: justify;
+    font-feature-settings: 'liga' off;
+}
+.faq_txt_wrap .card button h6{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+.faq_txt_wrap .card button:hover{
+    text-decoration: none;
+}
+.faq_txt_wrap .card button i{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #00000033;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 15px;
+}
+[data-toggle="collapse"][aria-expanded="true"] h6{
+    color: #1C4649!important;
+}
+[data-toggle="collapse"][aria-expanded="true"] i{
+    color: #1C4649!important;
+}
+.faq_section{
+    padding: 90px 0px;
+}
+.card.show{
+    border-color: #3EB49C!important;
+    background: transparent!important;
+}
+
+
+/* footer css start */
+.footer_section{
+    background: linear-gradient(180deg, rgba(193, 255, 237, 0.78) 0%, rgba(174, 231, 255, 0.71) 49.48%, rgba(233, 198, 255, 0.49) 100%);
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+/* .ftr_logo a img{
+    width: 150px;
+} */
+.ftr_logo p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 175.75%;
+    color: #3C3C3C;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
+}
+.ftr_links h6{
+    font-family: Satoshi-Bold;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #3C3C3C;
+    margin-bottom: 20px;
+}
+.ftr_links ul li a{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 23px;
+    color: #3C3C3C;
+    display: block;
+    margin-bottom: 15px;
+    transition: all linear .2s;
+}
+.ftr_social ul li span{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 27px;
+    color: #3C3C3C;
+}
+.ftr_links ul li a:hover{
+    text-decoration: underline;
+}
+.ftr_social{
+    margin-top: 30px;
+}
+.ftr_social ul {
+    display: flex;
+    align-items: center;
+}
+.ftr_social ul li a{
+    margin-left: 30px;
+}
+.ftr_copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ftr_copy p a,
+.ftr_copy p{
+    font-family: Satoshi-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    color: #3C3C3C;
+}
+.ftr_copy p i{
+    font-size: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* footer css end */
+
+.signup_section{
+    padding: 60px 0px;
+}
+.sign_up_lft_wrap{
+    background-image: url(../images/signup_img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px;
+    padding-top: 280px;
+    border-radius: 15px;
+}
+.sign_up_lft_wrap h4{
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.sign_up_lft_wrap a{
+    background: #1BD740;
+    border-radius: 4.72738px 4.7251px 4.7251px 4.72738px;
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border-bottom: 5px solid #00B61F;
+    display: inline-block;
+    padding: 11px 32px;
+}
+.sign_up_lft_wrap a i{
+    margin-right: 8px;
+}
+.sign_up_lft_wrap_2 a{
+    background: #FFFFFF;
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: #0B5043;
+    padding: 7px 55px;
+    border-color: #0B5043;
+}
+.sign_up_lft_wrap_2 p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.74);
+}
+.sign_up_lft_wrap_2 {
+    padding-top: 270px;
+}
+.sign_up_lft_wrap_2 h4{
+    margin-bottom: 15px;
+}
+
+.instagram_post_sec{
+    background: linear-gradient(180deg, #EFFFF7 0%, #FFFFFF 39.69%, #EFFFF7 100%);
+    padding: 60px 0px;
+}
+.instagram_btn{
+    text-align: center;
+}
+.instagram_btn h5{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 32px;
+    line-height: 36px;
+    color: #1C4649;
+    margin-bottom: 15px;
+}
+.instagram_btn a{
+    background: #3EB49C;
+    border-radius: 4.30807px;
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 16.0036px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom: 5px solid #266C5E;
+    display: inline-block;
+    padding: 14px 30px;
+    margin-right: 15px;
+    transition: all linear .3s;
+}
+.instagram_btn a:hover{
+    background-color: #266C5E;
+}
+.instagram_posts a img{
+    width: 200px;
+    margin: 0 5px;
+}
+.instagram_btn{
+    margin-top: 140px;
+}
+.get_start_wrap{
+    background-color: #3EB49C;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 15px;
+}
+.get_start_wrap img{
+    width: 150px;
+}
+.get_start_wrap p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 17px;
+    line-height: 168.9%;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+.get_rgt input{
+    background: #FFFFFF;
+    border: 1px solid #3C3C3C;
+    box-sizing: border-box;
+    border-radius: 4.30288px 4.30081px 4.30081px 4.30288px;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #242424;
+    height: 50px;
+    position: relative;
+    border-bottom: 2px solid #242424;
+}
+.get_rgt input:focus-within{
+    box-shadow: none;
+}
+.get_rgt{
+    position: relative;
+    margin-top: 20px;
+}
+.get_rgt i {
+	position: absolute;
+	right: 16px;
+	top: 10px;
+	font-size: 29px;
+    cursor: pointer;
+}
+.get_lft{
+    text-align: center;
+}
+.product_buy_sec{
+    padding: 60px 0px;
+    background: linear-gradient(180deg, #EFFFF7 0%, #FFFFFF 39.69%, #EFFFF7 100%);
+}
+.product_feat_wrap ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.product_feat_wrap ul li p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 162.5%;
+    color: #3C3C3C;
+    opacity: 0.75;
+}
+.product_feat_wrap ul li p img{
+    width: 25px;
+}
+.sidebar_img a{
+    padding: 0px!important;
+    display: block;
+    margin-bottom: 10px;
+}
+.sidebar_img a.active{
+    background-color: transparent!important;
+}
+.sidebar_img a img{
+    border-radius: 10px;
+}
+.review_txt_wrap p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 17px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.review_txt_wrap p img{
+    width: 50px;
+    margin-right: 8px;
+}
+.product_title_wrap h3{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 42px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: #1C4649;
+    text-shadow: 0px 4.34286px 16.2857px rgba(60, 60, 60, 0.15);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.price_box_wrap{
+    margin-top: 12px;
+}
+.price_box_wrap h4 {
+	background: #3EB49C;
+	border: 3px solid #227362;
+	box-sizing: border-box;
+	border-radius: 15px;
+	display: inline;
+	font-style: normal;
+	font-family: Satoshi-Bold;
+	font-size: 34.1903px;
+	line-height: 110%;
+	color: #FFFFFF;
+	padding: 13px 25px;
+}
+.price_midle_txt h6{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15.9783px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.4;
+}
+.price_midle_txt h5{
+    font-style: normal;
+    font-family: Satoshi-Regular;
+    font-size: 20px;
+    line-height: 110%;
+    color: #3C3C3C;
+    margin-bottom: 5px;
+}
+.price_midle_txt h5 span{
+    font-size: 30px;
+    font-family: Satoshi-Bold;
+}
+.price_midle_txt p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 11.269px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.price_midle_txt p span{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 16.571px;
+    line-height: 110%;
+    text-decoration-line: line-through;
+    color: #3C3C3C;
+}
+
+.price_box_wrap .media {
+    align-items: center;
+}
+.product_pick_wrap .media h6,
+.price_box_wrap .media h6{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 22px;
+    line-height: 162.5%;
+    color: #3C3C3C;
+}
+.product_pick_wrap .media p,
+.price_box_wrap .media p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 152.5%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.price_box_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_pick_wrap h5{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 18px;
+    line-height: 162.5%;
+    color: rgba(60, 60, 60, 0.746);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.product_pick_wrap .media .mt_3{
+    margin-top: 14px;
+    margin-right: 15px;
+}
+.product_pick_wrap .media{
+    border: 2px solid rgba(0, 0, 0, 0.246);
+    box-sizing: border-box;
+    border-radius: 14.2964px;
+    padding: 14px 17px;
+}
+.product_buy_count_wrap .quantity {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5.05572px;
+    padding: 9px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product_buy_count_wrap .quantity input{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32.8828px;
+    line-height: 44px;
+    color: #242424;
+    border: none;
+    background: transparent;
+    width: 60px;
+    text-align: center;
+}
+.product_buy_count_wrap .quantity i{
+    color: #242424;
+    cursor: pointer;
+}
+.product_buy_count_wrap{
+    margin-top: 25px;
+}
+.product_buy_count_wrap .product_buy_btn_2,
+.product_buy_count_wrap .product_buy_btn{
+    background: #3EB49C;
+    border-radius: 4.30807px;
+    font-style: normal;
+    font-family: Satoshi-Black;
+    font-size: 16.0036px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-bottom: 5px solid #266C5E;
+    display: inline-block;
+    padding: 18px 50px;
+    margin-right: 15px;
+    transition: all linear .3s;
+}
+.product_buy_count_wrap .product_buy_btn_2 {
+	padding: 10px 15px;
+}
+.product_buy_count_wrap .product_buy_btn_2:hover{
+    background-color: #266C5E;
+}
+.product_details_wrap{
+    margin-top: 25px;
+}
+.product_details_wrap ul li a{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 16px;
+    line-height: 162.5%;
+    color: #3B3B3B;
+    border-radius: 10px!important;
+}
+.product_details_wrap ul li a.active{
+    background: rgba(62, 180, 156, 0.1)!important;
+    color: #3EB49C!important;
+}
+.product_descriptions p{
+    font-style: normal;
+    font-family: Satoshi-Regular;
+    font-size: 14px;
+    line-height: 196%;
+    color: #3B3B3B;
+    height: 120px;
+    overflow-y: scroll;
+}
+
+.slider_section{
+    position: relative;
+}
+.slidPrv_1{
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slidNext_1{
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vdo_sliders .slick-dots{
+    text-align: center;
+}
+.vdo_sliders .slick-dots li {
+	display: inline-block;
+    width: 13px;
+    z-index: 9999;
+	height: 13px;
+	border-radius: 10px;
+	background: rgba(62, 180, 156, 0.507);
+	margin: 0px 3px;
+	margin-top: 30px;
+    transition: all linear .3s;
+}
+.vdo_sliders .slick-dots li.slick-active{
+    background: #3EB49C;
+    width: 25px;
+}
+.vdo_sliders .slick-dots li button{
+    opacity: 0;
+    font-size: 0;
+}
+
+.reviews_section{
+    padding: 80px 0px;
+}
+
+.overall_rating_wrap .media {
+    align-items: center;
+}
+.overall_rating_wrap .media span{
+    background: #2BCA84;
+    border-radius: 12px;
+    font-style: normal;
+    font-family: Satoshi-Regular;
+    font-size: 24px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding: 12px 14px;
+    margin-right: 15px;
+}
+
+.overall_rating_wrap .media h6{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 22px;
+    line-height: 31px;
+    color: #3C3C3C;
+}
+.overall_rating_wrap .media p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 24px;
+    color: #3C3C3C;
+    opacity: 0.5;
+}
+.overall_rating_img ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.overall_rating_img ul li span{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 17.0476px;
+    line-height: 23px;
+    color: #000000;
+    opacity: 0.75;
+}
+.overall_rating_img ul li img{
+    width: 50px;
+    margin-left: 6px;
+}
+
+.review_box_wrap {
+    border-top: 2px solid rgba(36, 36, 36, 0.103);
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.review_box_lft .media img{
+    width: 40px;
+    margin-right: 12px;
+}
+.review_box_lft .media h6{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    line-height: 25px;
+    color: #3C3C3C;
+}
+.review_box_lft .media p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 15.5142px;
+    line-height: 21px;
+    color: #3C3C3C;
+    opacity: 0.5;
+}
+.review_box_lft .media {
+    margin-top: 15px;
+}
+.verified_rev p{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 17.0754px;
+    line-height: 162.5%;
+    color: #3EB49C;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.review_box_lft{
+    margin-left: 35px;
+}
+.verified_rev ul {
+    margin-top: 12px;
+}
+.verified_rev ul li{
+    display: inline-block;
+}
+.verified_rev ul li img{
+    display: block;
+    width: 50px;
+}
+
+.review_box_rgt h4{
+    background: #2BCA84;
+    border-radius: 9.69637px;
+    padding: 9px 17px;
+    font-style: normal;
+    font-family: Satoshi-Regular;
+    font-size: 21.332px;
+    line-height: 110%;
+    /* identical to box height, or 23px */
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.review_box_rgt h6{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #3C3C3C;
+    margin-bottom: 15px;
+
+}
+.review_box_rgt p{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 14px;
+    line-height: 170%;
+    color: #3C3C3C;
+    opacity: 0.75;
+    margin-bottom: 15px;
+}
+
+.review_box_rgt h5{
+    font-style: normal;
+    font-family: Satoshi-Bold;
+    font-size: 16.54px;
+    line-height: 162.5%;
+    color: #2BCA83;
+    display: flex;
+    align-items: center;
+}
+.review_box_rgt h5 img{
+    margin-right: 9px;
+}
+
+.review_box_rgt{
+    margin-top: 20px;
+}
+
+.read_more_reviews{
+    text-align: center;
+    border-top: 2px solid rgba(36, 36, 36, 0.103);
+    border-bottom: 2px solid rgba(36, 36, 36, 0.103);
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.read_more_reviews a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.747);
+}
+.nutriniotn_head_2{
+    margin-bottom: 50px;
+}
+.write_review{
+    margin-top: 30px;
+    text-align: center;
+}
+.write_review h6{
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 17.4535px;
+    line-height: 24px;
+    color: #3C3C3C;
+    margin-bottom: 20px;
+}
+.write_review a{
+    background: #FFFFFF;
+    border: 1px solid #242424;
+    border-bottom: 5px solid #242424;
+    box-sizing: border-box;
+    border-radius: 3.78514px 3.78331px 3.78331px 3.78514px;
+    font-style: normal;
+    font-family: Satoshi-Medium;
+    font-size: 14.0542px;
+    line-height: 20px;
+    color: #242424;
+    display: inline-block;
+    padding: 14px 35px;
+    transition: all linear .2s;
+}
+.write_review a i{
+    margin-right: 6px;
+}
+.write_review a:hover{
+    background-color: #242424;
+    color: #fff;
+}
+
+.ftr_country p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3C3C3C;
+}
+
+.ftr_country{
+    margin-top: 15px;
+}
+.ftr_copy{
+    margin-top: 10px;
+}
+
+.brdr_top{
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+    margin-top: 25px;
+}
+
+.paoyment_method{
+    text-align: right;
+    margin-top: 10px;
+}
+.paoyment_method ul li {
+    display: inline-block;
+    margin-left: 7px;
+}
+
+.newClass {
+    background:#fff!important;
+}
+.newClass ul li a{
+    color: #000!important;
+}
+.header_section .header_profiles a img{
+    filter: invert(93%) sepia(0%) saturate(7473%) hue-rotate(126deg) brightness(105%) contrast(108%);
+}
+.newClass .header_profiles a img{
+    filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important;
+}
+
+/* width */
+.product_descriptions p::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .product_descriptions p::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .product_descriptions p::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .product_descriptions p::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.nutriniotn_head p:before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -10px;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    animation: lineH 1s 2s infinite linear;
+    transform: translateX(-50%);
+}
+@keyframes lineH{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;opacity: 0;
+    }
+}
