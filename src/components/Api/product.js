@@ -11,15 +11,16 @@ function product() {
             method: 'GET',
             url: 'https://'+helper.APIKEY+':'+helper.APIPASSWORD+'@'+helper.STORENAME+'.myshopify.com/admin/api/'+helper.APIVERSION+'/products.json',
             // ContentType: 'application/json',
-            mode: 'no-cors',
-            crossDomain: true,
-            credentials: 'same-origin',
-            withCredentials: true,
+            // mode: 'no-cors',
+            // crossDomain: true,
+            // credentials: 'same-origin',
+            // withCredentials: true,
+            // crossorigin:true,
+            // headers: {"Access-Control-Allow-Origin": "*"}
 
-            // header('Access-Control-Allow-Origin: *');
             headers : {
                 'Access-Control-Allow-Origin': '*',
-                'Content-Type': 'application/json',
+                'Content-Type': 'multipart/form-data',
             }
 
         }).then(function (response) {
