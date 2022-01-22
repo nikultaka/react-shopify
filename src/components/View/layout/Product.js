@@ -209,7 +209,7 @@ const Product = (props) => {
                   </div>
                   <div className="col-lg-8">
                     <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)} className="product_buy_btn">BUY NOW</a>
-                    <a href="#" className="product_buy_btn_2"><img src={helper.ImagePath + "lock_icon.svg"} alt="a" className="img-fluid" /></a>
+                    {/* <a href="#" className="product_buy_btn_2"><img src={helper.ImagePath + "lock_icon.svg"} alt="a" className="img-fluid" /></a> */}
                   </div>
                 </div>
               </div>

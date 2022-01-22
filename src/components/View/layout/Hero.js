@@ -22,14 +22,14 @@ const Hero = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="col-lg-4">
+                        {/* <div className="col-lg-4">
                             <div className="header_profiles">
                                 <ul>
                                     <li><a href="#"><img src={helper.ImagePath+"user_icon.svg"} alt="a" className="img-fluid" /></a></li>
                                     <li><a href="#"><img src={helper.ImagePath+"lock_icon.svg"} alt="a" className="img-fluid" /></a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </header>
