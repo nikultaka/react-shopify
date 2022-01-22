@@ -12,12 +12,13 @@ import SignUp from "./layout/Signup";
 import Slider from "./layout/Slider";
 import WhyWe from "./layout/WhyWe";
 
-const Home = () =>{
+const Home = (props) =>{
     return(
         <>
+        
         <Hero/>
         <SeeOn/>
-        <Product/>
+        <Product product={props.product}  handelOnClickBuyNow={props.handelOnClickBuyNow}/>
         <Nutrition/>
         <WhyWe/>
         <Slider/>

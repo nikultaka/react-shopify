@@ -1,5 +1,5 @@
 import Home from "../View/Home";
-import react,{useEffect,useState} from "react";
+import react, { useEffect, useState } from "react";
 import productApi from "../Api/product";
 
 function HomeController() {
@@ -9,17 +9,36 @@ function HomeController() {
     useEffect(() => {
 
         (async () => {
-            const productList = await productApi.listProduct();
-            console.log(productList);
-         
+            const productList = await productApi.getProduct();
+            if (productList && productList[0]) {
+                setProduct(productList[0])
+
+            }
+
 
         })();
 
     }, []);
-    
-    return(
+
+    const handelOnClickBuyNow = async (variantId, quantity) => {
+        const buyProduct = await productApi.buyProduct(variantId, quantity)
+        if (buyProduct) {
+            if (buyProduct[0].webUrl) {
+                window.location = buyProduct[0].webUrl
+            }
+
+
+        }
+
+
+    }
+
+
+
+    return (
+
         <>
-        <Home/>
+            <Home product={product} handelOnClickBuyNow={handelOnClickBuyNow} />
         </>
     )
 

@@ -1221,3 +1221,6 @@ img{
         width: 95%;opacity: 0;
     }
 }
+.active_variant.media {
+    background: #3eb49c42;
+}
