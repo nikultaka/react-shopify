@@ -1,13 +1,27 @@
-const MobileStickey = () => {
+const MobileStickey = (props) => {
+    let quantity = props.quantity
+    let setQuantity = props.setQuantity
+    let varientId = props.varientId
+    let setVarientId = props.setVarientId
+    const minusValue = (value) => {
+        if (value > 1) {
+            value--;
+        }
+        setQuantity(value)
+    }
+    const plusValue = (value) => {
+        value++;
+        setQuantity(value)
+    }
     return (
         <div className="mobile_sticky d-lg-none">
             <div className="d-flex align-items-center">
                 <div className="quantity">
-                    <i className="fa fa-minus quantity__minus"></i>
-                    <input name="quantity" type="text" className="quantity__input" value="1" />
-                    <i className="fa fa-plus quantity__plus"></i>
+                    <i className="fa fa-minus quantity__minus" onClick={() => minusValue(quantity)}></i>
+                    <input name="quantity" type="text" className="quantity__input" value={quantity} />
+                    <i className="fa fa-plus quantity__plus"  onClick={() => plusValue(quantity)}></i>
                 </div>
-                <a href="#">BUY NOW</a>
+                <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)}>BUY NOW</a>
             </div>
         </div>
     )

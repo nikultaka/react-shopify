@@ -18,7 +18,7 @@ const Home = (props) =>{
         
         <Hero/>
         <SeeOn/>
-        <Product product={props.product}  handelOnClickBuyNow={props.handelOnClickBuyNow}/>
+        <Product product={props.product}  handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId}/>
         <Nutrition/>
         <WhyWe/>
         <Slider/>
@@ -28,7 +28,7 @@ const Home = (props) =>{
         <SignUp/>
         <Instagram/>
         <Footer/>
-        <MobileStickey/>
+        <MobileStickey  handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId}/>
         </>
         
     )
