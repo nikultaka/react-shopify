@@ -50,7 +50,7 @@ const Hero = () => {
                     </div>
                     <div className="col-4 text-center">
                         <a href="#" className="iconss">
-                            <img src={helper.ImagePath+"lock_icon.svg"} alt="a" className="img-fluid" />
+                            {/* <img src={helper.ImagePath+"lock_icon.svg"} alt="a" className="img-fluid" /> */}
                         </a>
                     </div>
                 </div>

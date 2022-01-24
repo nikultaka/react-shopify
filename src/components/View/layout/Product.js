@@ -2,15 +2,20 @@ import helper from "../../Common/Helper";
 import react, { useState, useEffect } from "react";
 const Product = (props) => {
   let product = props.product;
-  const [quantity, setQuantity] = useState(1);
+  // const [quantity, setQuantity] = useState(1);
   const [checkedVal, setCheckedVal] = useState(0);
   const [varientPrice, setVarientPrice] = useState(0);
-  const [varientId, setVarientId] = useState();
+  // const [varientId, setVarientId] = useState();
+  let quantity = props.quantity
+  let setQuantity = props.setQuantity
+  let varientId = props.varientId
+  let setVarientId = props.setVarientId
 
   //const [product, setProduct] = useState(props.product);
 
 
   const handelOnchangeVarient = (key, price, vid) => {
+
     setCheckedVal(key)
     setVarientPrice(Math.round(price))
     setVarientId(vid)
@@ -58,7 +63,7 @@ const Product = (props) => {
     '-moz-appearance': 'none',
   }
   return (
-    
+
     <section className="product_buy_sec">
       <div className="container">
         <div className="row">
