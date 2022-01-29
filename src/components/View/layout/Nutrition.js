@@ -34,9 +34,9 @@ const Nutrition = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="placed_img margin_btm ">
+                    {/* <div className="placed_img margin_btm ">
                       <img src={helper.ImagePath+"placed_img.png"} alt="a" className="img-fluid" />
-                    </div>
+                    </div> */}
                     <div className="nutrition_feat_box margin_left_2">
                       <div className="media">
                         <img src={helper.ImagePath+"avatar_3.svg"} alt="a" className="img-fluid" />
@@ -59,9 +59,7 @@ const Nutrition = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="placed_img margin_btm text-center">
-                      <img src={helper.ImagePath+"placed_img.png"} alt="a" className="img-fluid" />
-                    </div>
+                    
                     <div className="nutrition_feat_box margin_left_2">
                       <div className="media">
                         <img src={helper.ImagePath+"avatar_5.svg"} alt="a" className="img-fluid" />
@@ -70,6 +68,9 @@ const Nutrition = () => {
                           <p>Your gut is the most important organ to keep your body smoooooth. We packed in 1.5 billion probiotics to strengthen your roots and control your breakouts. </p>
                         </div>
                       </div>
+                    </div>
+                    <div className="placed_img margin_btm text-center">
+                      <img src={helper.ImagePath+"placed_img.png"} alt="a" className="img-fluid" />
                     </div>
                   </div>
                 </div>
