@@ -1,6 +1,9 @@
 import helper from "../../Common/Helper";
 const Instagram = () => {
-    const instagramPostArray = JSON.parse(localStorage.getItem('instagramRecentPostData'));
+    let instagramPostArray = Array();
+    if(localStorage.getItem('instagramRecentPostData') != null && typeof localStorage.getItem('instagramRecentPostData') != 'undefined') {
+        instagramPostArray = JSON.parse(localStorage.getItem('instagramRecentPostData'));
+    }
     console.log(instagramPostArray)
     // const instagramPostArray = [
     //     {
