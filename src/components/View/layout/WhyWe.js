@@ -18,11 +18,11 @@ const WhyWe =() =>{
                 <table>
                   <thead>
                     <tr>
-                      <th></th>
+                      <th width="20%"></th>
                       <th width="20%"><span><img src={helper.ImagePath+"logo.svg"} alt="a" className="img-fluid"/></span></th>
-                      <th>POWDER</th>
-                      <th>TABLET</th>
-                      <th>HEALTH <br/> DRINKS</th>
+                      <th style={{ fontSize: "2vw" }}>POWDER</th>
+                      <th style={{ fontSize: "2vw" }}>TABLET</th>
+                      <th style={{ fontSize: "2vw" }}>HEALTH DRINKS</th>
                     </tr>
                   </thead>
                   <tbody>

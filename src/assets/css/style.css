@@ -69,7 +69,7 @@ img{
 
 /*header css  start */
 .hero_section{
-    background-image: url(../images/hero_bg.png);
+    background-image: url(../images/hero_bg.jpg);
     background-size: cover;
     padding-bottom: 100px;
 }

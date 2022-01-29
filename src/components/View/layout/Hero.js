@@ -1,4 +1,5 @@
 import helper from "../../Common/Helper";
+// import banner1 from "../../../assets/images/banner1.jpg"
 const Hero = () => {
     return (
         <section className="hero_section">
@@ -62,8 +63,8 @@ const Hero = () => {
                     <div className="col-lg-12">
                         <div className="hero_txt">
                             <h6>Introducing Dr Su’s Glow x Grow</h6>
-                            <h1>Lorem Ipsum  <br /> Dolor Sit Amet</h1>
-                            <p>Consectetur adipiscing elit. Maecenas et fermentum nulla. <br /> Etiam lobortis nibh nunc, sodales facilisis torto.</p>
+                            <h1>The highest <br/> standards of <br/>Nutrition.</h1>
+                            <p>Backed with Science,Powered by our Community.</p>
 
                             <div className="hero_bttn">
                                 <a href="#">BUY NOW</a>

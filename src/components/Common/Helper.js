@@ -1,4 +1,4 @@
-const Mode = "Devlopement"
+const Mode = "developer"
 
 
 let helper = {
@@ -32,8 +32,8 @@ let helper = {
 if (Mode == "Production") {
 
     helper = {
-        BASE_URL: "http://localhost:3000",
-        ImagePath: "http://localhost:3000/assets/images/",
+        BASE_URL: "https://drsu.flamecloud.co.uk/",
+        ImagePath: "https://drsu.flamecloud.co.uk/assets/images/",
         APIKEY: "cd4134a5fa27fad34663d5e1bf65df0b",
         APIPASSWORD: "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",
         STORENAME: "nikuls-store",
@@ -54,6 +54,6 @@ if (Mode == "Production") {
         INSTAGRAM_USER_NAME : "mohit__patel__007",
         INSTAGRAM_USER_URL : "https://www.instagram.com/mohit__patel__007/"
 
-    }
+    }    
 }
 export default helper;

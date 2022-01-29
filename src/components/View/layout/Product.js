@@ -1,10 +1,14 @@
 import helper from "../../Common/Helper";
 import react, { useState, useEffect } from "react";
+import Slider from "react-slick";
+
 const Product = (props) => {
   let product = props.product;
   // const [quantity, setQuantity] = useState(1);
   const [checkedVal, setCheckedVal] = useState(0);
   const [varientPrice, setVarientPrice] = useState(0);
+  const [soldVal, setSoldVal] = useState(localStorage.getItem('soldItems') ? localStorage.getItem('soldItems') : 58);
+
   // const [varientId, setVarientId] = useState();
   let quantity = props.quantity
   let setQuantity = props.setQuantity
@@ -48,6 +52,20 @@ const Product = (props) => {
     value++;
     setQuantity(value)
   }
+  function randomNumber(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  var now = new Date();
+  var delay = 60 * 60 * 1000; // 1 hour in msec
+  var start = delay - (now.getMinutes() * 60 + now.getSeconds()) * 1000 + now.getMilliseconds();
+
+  setTimeout(function doSomething() {
+    localStorage.setItem('soldItems', randomNumber(50, 100))
+    setSoldVal(randomNumber(50, 100))
+    setTimeout(doSomething, delay);
+  }, start)
 
   const product_v = {
     cursor: 'pointer',
@@ -62,6 +80,15 @@ const Product = (props) => {
     'WebkitAppearance': 'none',
     '-moz-appearance': 'none',
   }
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    vertical: true,
+    // prevArrow:true,
+    // nextArrow:true,
+  };
   return (
 
     <section className="product_buy_sec">
@@ -70,16 +97,18 @@ const Product = (props) => {
           <div className="col-lg-1 pr-lg-0">
             <div className="sidebar_img">
               <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                {product && product.images?.length > 0 &&
-                  product.images.map((img, key1) => {
-                    return (
-                      <a className="nav-link" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
-                        <img src={img.src} alt="a" className="img-fluid" />
-                      </a>
-                    )
-                  })
+                <Slider {...settings}>
+                  {product && product.images?.length > 0 &&
+                    product.images.map((img, key1) => {
+                      return (
+                        <a className="nav-link mr-5" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
+                          <img src={img.src} alt="a" className="img-fluid mr-5" />
+                        </a>
+                      )
+                    })
 
-                }
+                  }
+                </Slider>
 
                 {/* <a className="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                   <img src={helper.ImagePath + "glow_main_img.png"} alt="a" className="img-fluid" />
@@ -162,7 +191,7 @@ const Product = (props) => {
                 <div className="media">
                   <img src={helper.ImagePath + "amp.png"} alt="a" className="img-fluid" />
                   <div className="media-body">
-                    <h6>100 Sold</h6>
+                    <h6>{soldVal} Sold</h6>
                     <p>in the last 1 hour</p>
                   </div>
                 </div>
@@ -233,17 +262,31 @@ const Product = (props) => {
                 <div className="tab-content" id="pills-tabContent">
                   <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div className="product_descriptions">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at enim in lacus consectetur pulvinar a id ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim mi et ligula porttitor, vitae aliquam mauris sagittis. Integer egestas mi dolor, eu bibendum ipsum maximus vitae. Nulla quam enim, lacinia eu dictum ut, imperdiet non urna. Nulla porta aliquet ex, scelerisque interdum eros ultrices et. Suspendisse sagittis magna euismod sollicitudin pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim mi et ligula porttitor, vitae aliquam mauris sagittis. Integer egestas mi dolor, eu bibendum ipsum maximus vitae. Nulla quam enim, lacinia eu dictum ut, imperdiet non urna. Nulla porta aliquet ex, scelerisque interdum eros ultrices et. Suspendisse sagittis magna euismod sollicitudin pretium.</p>
+                      <p>Glow x Grow, a power packed blend of 38 ingredients that delivers the perfect nutrition profile of vitamins, minerals, antioxidants, fiber and probiotics in just one sachet! We never use any artificial flavors, colors or preservatives.
+                        <br />
+                        We are on a mission to make you feel great!
+                      </p>
                     </div>
                   </div>
                   <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div className="product_descriptions">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at enim in lacus consectetur pulvinar a id ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim mi et ligula porttitor, vitae aliquam mauris sagittis. Integer egestas mi dolor, eu bibendum ipsum maximus vitae. Nulla quam enim, lacinia eu dictum ut, imperdiet non urna. Nulla porta aliquet ex, scelerisque interdum eros ultrices et. Suspendisse sagittis magna euismod sollicitudin pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim mi et ligula porttitor, vitae aliquam mauris sagittis. Integer egestas mi dolor, eu bibendum ipsum maximus vitae. Nulla quam enim, lacinia eu dictum ut, imperdiet non urna. Nulla porta aliquet ex, scelerisque interdum eros ultrices et. Suspendisse sagittis magna euismod sollicitudin pretium.</p>
+                      <p>38 global ingredients that make Glow x Grow the most potent blend ever! <br />
+                        Lemon powder (20%), Orange powder, Beet root powder (3%), Carrot powder (3%), Oats fiber, Tomato powder, Rock salt, Ashwagandha extract 2.5%, Banana powder, Barley grass powder, Black salt, Spinach Powder (2%), Wheat Grass Powder (2%), Mint Leaves Powder (2%), Bottle gourd powder (1%), Alfalfa powder, Apple powder, Celery Leaves Powder, Inulin, Moringa Powder, Sunflower Lecithin, Tamarind powder, Strawberry powder, Acerola cherry extract 17%, Almond Flour, Amchur Powder, Amla powder, Blueberry extract (1%), Coriander leaves powder, Cranberry extract, Curcumin 95%, Flaxseed Powder 50%, Ginseng extract, Goji berry extract, Green tea extract 98%, Sea Buckthorn, Spirulina Powder, Vitamin and Mineral Mix, Xanthan Gum (E415), Stevia, Probiotics (Lactobacillus acidophilus, Lactobacillus rhamnosus, Lactobacillus fermentum, Bifidobacterium longum, Bifidobacterium bifidum, Saccharomyces boulardii) 1.5 Billion CFU Per Serving (7g)
+                      </p>
                     </div>
                   </div>
                   <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     <div className="product_descriptions">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at enim in lacus consectetur pulvinar a id ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim mi et ligula porttitor, vitae aliquam mauris sagittis. Integer egestas mi dolor, eu bibendum ipsum maximus vitae. Nulla quam enim, lacinia eu dictum ut, imperdiet non urna. Nulla porta aliquet ex, scelerisque interdum eros ultrices et. Suspendisse sagittis magna euismod sollicitudin pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim mi et ligula porttitor, vitae aliquam mauris sagittis. Integer egestas mi dolor, eu bibendum ipsum maximus vitae. Nulla quam enim, lacinia eu dictum ut, imperdiet non urna. Nulla porta aliquet ex, scelerisque interdum eros ultrices et. Suspendisse sagittis magna euismod sollicitudin pretium.</p>
+                      <p>
+                        Step 1 : Pour one sachet of Glow x Grow into 200 ml of water or your favorite drink.<br />
+                        Step 2 : Stir/ blend until fully dissolved.<br />
+                        Step 3 : Keep glowing and growing.<br />
+                        <b>Consume one sachet daily at any time. Best results when taken in the morning on an empty stomach. </b><br />
+                        Recommended Dosage : 1 serving per day or as suggested by healthcare professionals.<br />
+                        Tastes Like : Lemon and Mint. So refreshing, there’s nothing quite like it!
+
+
+                      </p>
                     </div>
                   </div>
                 </div>
