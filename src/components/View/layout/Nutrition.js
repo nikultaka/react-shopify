@@ -20,8 +20,8 @@ const Nutrition = () => {
                       <div className="media">
                         <img src={helper.ImagePath+"avatar.svg"} alt="a" className="img-fluid" />
                         <div className="media-body">
-                          <h6>Heading</h6>
-                          <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer ac diam vulputate, <br /> fermentum eros in, finibus erat. </p>
+                          <h6>Vitamins</h6>
+                          <p>Our bodies cannot produce their own vitamins. Glow x Grow is bursting with vitamins which act as defenders, maintenance workers and healers for your skin and hair. They are also building blocks that keep your hardworking body running!</p>
                         </div>
                       </div>
                     </div>
@@ -29,8 +29,8 @@ const Nutrition = () => {
                       <div className="media">
                         <img src={helper.ImagePath+"avatar_2.svg"} alt="a" className="img-fluid" />
                         <div className="media-body">
-                          <h6>Heading</h6>
-                          <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer ac diam vulputate, <br /> fermentum eros in, finibus erat. </p>
+                          <h6>Minerals</h6>
+                          <p>Our body cannot create a single mineral. So we created a mineral jackpot that helps you get healthy youthful skin and long lustrous hair from the inside.  </p>
                         </div>
                       </div>
                     </div>
@@ -41,7 +41,7 @@ const Nutrition = () => {
                       <div className="media">
                         <img src={helper.ImagePath+"avatar_3.svg"} alt="a" className="img-fluid" />
                         <div className="media-body">
-                          <h6>Heading</h6>
+                          <h6>Fiber</h6>
                           <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer ac diam vulputate, <br /> fermentum eros in, finibus erat. </p>
                         </div>
                       </div>
@@ -54,8 +54,8 @@ const Nutrition = () => {
                       <div className="media">
                         <img src={helper.ImagePath+"avatar_4.svg"} alt="a" className="img-fluid" />
                         <div className="media-body">
-                          <h6>Heading</h6>
-                          <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer ac diam vulputate, <br /> fermentum eros in, finibus erat. </p>
+                          <h6>Antioxidants</h6>
+                          <p>Antioxidants deserve all the hype indeed! Glow x Grow being a powerhouse of antioxidants helps with free radical damage, aging and skin repair. They also maintain scalp health & stimulate hair growth! </p>
                         </div>
                       </div>
                     </div>
@@ -66,8 +66,8 @@ const Nutrition = () => {
                       <div className="media">
                         <img src={helper.ImagePath+"avatar_5.svg"} alt="a" className="img-fluid" />
                         <div className="media-body">
-                          <h6>Heading</h6>
-                          <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer ac diam vulputate, <br /> fermentum eros in, finibus erat. </p>
+                          <h6>Probiotics</h6>
+                          <p>Your gut is the most important organ to keep your body smoooooth. We packed in 1.5 billion probiotics to strengthen your roots and control your breakouts. </p>
                         </div>
                       </div>
                     </div>
