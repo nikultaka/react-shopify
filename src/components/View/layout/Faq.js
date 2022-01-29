@@ -16,7 +16,7 @@ const Faq = () => {
                         <div className="faq_txt_wrap">
                             <div className="bs-example">
                                 <div className="accordion" id="accordionExample">
-                                    <div className="card">
+                                    <div className="card" id="headingOne">
                                         <div className="card-header p-0" id="headingOne">
                                             <h2 className="mb-0">
                                                 <button type="button" className="btn" data-toggle="collapse" data-target="#collapseOne">

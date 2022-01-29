@@ -1,7 +1,7 @@
 import helper from "../../Common/Helper";
 const Reviews = () =>{
     return(
-        <section className="reviews_section">
+        <section className="reviews_section" id="reviews_section">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
