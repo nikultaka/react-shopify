@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <section className="aboutus_section">
+    <section className="aboutus_section" id="aboutus_section">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">

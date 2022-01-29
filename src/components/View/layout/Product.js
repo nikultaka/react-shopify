@@ -91,7 +91,7 @@ const Product = (props) => {
   };
   return (
 
-    <section className="product_buy_sec">
+    <section className="product_buy_sec" id="product_buy_sec">
       <div className="container">
         <div className="row">
           <div className="col-lg-1 pr-lg-0">
