@@ -38,7 +38,7 @@
         margin-top: 30px;
     }
     .price_box_wrap{
-        flex-direction: column;
+        flex-direction: unset;
     }
     .price_box_wrap h4{
         text-align: center;
@@ -47,6 +47,8 @@
     .price_midle_txt{
         margin-top: 15px;
         margin-bottom: 20px;
+        margin-left: 17px;
+
     }
     .product_pick_wrap .media{
         padding: 12px;
