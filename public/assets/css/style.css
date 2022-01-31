@@ -394,13 +394,14 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-.faq_txt_wrap .card {
+ .faq_txt_wrap .card {
     margin-bottom: 20px;
     border: 3px solid #3EB49C!important;
     padding: 12px 0px;
     background: #3EB49C;
     border-radius: 10px!important;
 }
+
 .faq_txt_wrap .card .card-body p{
     color: rgba(11, 80, 67, 0.75);
     font-size: 17px;
@@ -434,6 +435,9 @@ img{
 }
 [data-toggle="collapse"][aria-expanded="true"] i{
     color: #1C4649!important;
+}
+[data-toggle="collapse"][aria-expanded="true"] {
+    background: #e7f6f3 !important;
 }
 .faq_section{
     padding: 90px 0px;
