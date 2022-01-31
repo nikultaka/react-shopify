@@ -617,6 +617,7 @@ img{
 .instagram_posts a img{
     width: 200px;
     height: 200px;
+    object-fit: cover;
     margin: 0 5px;
 }
 .instagram_btn{

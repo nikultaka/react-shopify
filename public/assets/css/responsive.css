@@ -1,16 +1,17 @@
-/* Extra small devices (portrait phones, less than 576px) */ 
-@media(min-width: 320px) and (max-width: 575px) {    
-    .header_menu{
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media(min-width: 320px) and (max-width: 575px) {
+    .header_menu {
         display: none;
     }
     .hero_txt h1 {
         font-size: 44px;
     }
-    .hero_txt p{
+    .hero_txt p {
         font-size: 16px;
         line-height: 22px;
     }
-    br{
+    br {
         display: none;
     }
     .hero_bttn a:first-child {
@@ -27,127 +28,126 @@
     .sidebar_img a {
         display: inline-block;
     }
-    .sidebar_img a{
+    .sidebar_img a {
         width: 19%;
         margin: 0 10px;
     }
-    .product_feat_wrap{
+    .product_feat_wrap {
         display: none;
     }
-    .product_buy_txt_wrap{
+    .product_buy_txt_wrap {
         margin-top: 30px;
     }
-    .price_box_wrap{
+    .price_box_wrap {
         flex-direction: unset;
     }
-    .price_box_wrap h4{
+    .price_box_wrap h4 {
         text-align: center;
         margin-bottom: 15px;
     }
-    .price_midle_txt{
+    .price_midle_txt {
         margin-top: 15px;
         margin-bottom: 20px;
         margin-left: 17px;
-
     }
-    .product_pick_wrap .media{
+    .product_pick_wrap .media {
         padding: 12px;
     }
-    .product_pick_wrap .media .mt_3{
+    .product_pick_wrap .media .mt_3 {
         margin-right: 10px;
     }
-    .product_pick_wrap .media h6, .price_box_wrap .media h6{
+    .product_pick_wrap .media h6,
+    .price_box_wrap .media h6 {
         font-size: 17px;
     }
-    .product_buy_count_wrap{
+    .product_buy_count_wrap {
         display: none;
     }
-    
-    .margin_left_2{
+    .margin_left_2 {
         margin-bottom: 15px;
     }
     .margin_left_2,
-    .margin_left{
+    .margin_left {
         margin-left: 0;
     }
-    .why_we_table table{
+    .why_we_table table {
         display: block;
         width: 100%;
         overflow-x: scroll;
     }
-    .nutriniotn_head h2{
+    .nutriniotn_head h2 {
         font-size: 30px;
         line-height: 38px;
     }
-    .slidPrv_1{
+    .slidPrv_1 {
         left: 0;
     }
-    .slidNext_1{
+    .slidNext_1 {
         right: 0;
     }
-    .overall_rating_wrap{
+    .overall_rating_wrap {
         margin-bottom: 25px;
     }
-    .overall_rating_img{
+    .overall_rating_img {
         margin-bottom: 25px;
     }
-    .review_box_lft{
+    .review_box_lft {
         margin-left: 0px;
     }
-    .write_review h6{
+    .write_review h6 {
         font-size: 14px;
     }
-    .faq_txt_wrap .card .card-header button{
+    .faq_txt_wrap .card .card-header button {
         padding-left: 0;
         padding-right: 0;
     }
     .faq_txt_wrap .card button i {
         width: 41px;
     }
-    .faq_txt_wrap .card button h6{
+    .faq_txt_wrap .card button h6 {
         font-size: 15px;
         line-height: 22px;
     }
-    .sign_up_lft_wrap{
+    .sign_up_lft_wrap {
         padding-top: 150px;
         margin-bottom: 25px;
         padding: 25px;
     }
-    .sign_up_lft_wrap h4{
+    .sign_up_lft_wrap h4 {
         font-size: 30px;
         line-height: 40px;
     }
-    .instagram_btn{
+    .instagram_btn {
         margin-top: 0;
         margin-bottom: 25px;
     }
-    .instagram_posts a img{
+    .instagram_posts a img {
         width: 100%;
         margin-bottom: 15px;
     }
-    .get_start_wrap{
+    .get_start_wrap {
         padding: 25px;
     }
-    .ftr_logo{
+    .ftr_logo {
         margin-bottom: 25px;
     }
-    .ftr_links{
+    .ftr_links {
         margin-top: 25px;
     }
     .paoyment_method,
-    .ftr_country{
+    .ftr_country {
         text-align: center;
     }
-    .header_section{
+    .header_section {
         display: none;
     }
-    .hero_section{
+    .hero_section {
         background-image: url(../images/MOB.jpg);
     }
-    .mobile_menu_sec .iconss img{
+    .mobile_menu_sec .iconss img {
         width: 35px;
     }
-    .mobile_menu_sec{
+    .mobile_menu_sec {
         padding-top: 15px;
         border-bottom: 1px solid #5e64689f;
         padding-bottom: 15px;
@@ -155,30 +155,30 @@
         width: 100%;
         z-index: 9999;
     }
-    .newClass .iconss a img{
+    .newClass .iconss a img {
         filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important;
     }
-    .mobile_sticky{
+    .mobile_sticky {
         position: fixed;
         left: 0;
         bottom: 1px;
         background-color: #fff;
         width: 100%;
     }
-    .mobile_sticky .quantity{
+    .mobile_sticky .quantity {
         width: 150px;
         display: flex;
         align-items: center;
         border: 1px solid #000;
         padding: 8px 20px;
     }
-    .mobile_sticky .quantity input{
+    .mobile_sticky .quantity input {
         width: 100%;
         border: none;
         font-size: 20px;
         text-align: center;
     }
-    .mobile_sticky a{
+    .mobile_sticky a {
         background: #3EB49C;
         border: 1px solid #227362;
         box-sizing: border-box;
@@ -192,116 +192,174 @@
         padding: 6px 25px;
         font-family: Satoshi-Bold;
     }
-    .instagram_posts{
+    .instagram_posts {
         margin: 10px;
         text-align: center;
     }
     .instagram_posts a img {
         margin: 5px;
     }
-    .product_buy_imgs{
+    .product_buy_imgs {
         display: none;
     }
-
+    .instagram_posts {
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+        width: 150px !important;
+        height: 150px !important;
+    }
 }
+
 
 /* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) and (max-width: 767px) {
-    .instagram_posts{
+    .instagram_posts {
         margin: 10px;
         text-align: center;
     }
     .instagram_posts a img {
         margin: 5px;
+        width: 200px !important;
+        height: 200px !important;
     }
-      
 }
 
-/* Medium devices (tablets, 768px and up) */ 
+
+/* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) and (max-width: 991px) {
-    .instagram_posts{
+    .instagram_posts {
         margin: 10px;
         text-align: center;
     }
     .instagram_posts a img {
         margin: 5px;
+        width: 340px !important;
+        height: 340px !important;
     }
-    
 }
+
 
 /* Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) and (max-width: 1199px) {
-    .instagram_posts{
+    /* .instagram_posts{
         margin: 10px;
         text-align: center;
-    }
+    } */
     .instagram_posts a img {
-        margin: 5px;
+        /* margin: 5px; */
+        width: 150px !important;
+        height: 150px !important;
     }
     .slick-prev:before {
         content: #9658;
         color: #3EB49C;
         font-size: 20px;
-      }
-      
-      .slick-next:before {
+    }
+    .slick-next:before {
         content: #9658;
         color: #3EB49C;
         font-size: 20px;
-      }
-      .slick-slider {
+    }
+    .slick-slider {
         margin-top: 60px;
-      }
-      
-      .slick-prev, .slick-next {
+    }
+    .slick-prev,
+    .slick-next {
         left: 50%;
         transform: translate(-50%, 0) rotate(90deg);
-      }
-      .slick-next {
+    }
+    .slick-next {
         top: unset;
         bottom: -30px;
-      }
-      .slick-prev {
-        top: -30px;
-      }
-      .slick-dots{
-        display: none !important;
-
     }
-       
+    .slick-prev {
+        top: -30px;
+    }
+    .slick-dots {
+        display: none !important;
+    }
 }
 
+
 /* Extra large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
     .slick-prev:before {
         content: #9658;
         color: #3EB49C;
         font-size: 20px;
-      }
-      
-      .slick-next:before {
+    }
+    .slick-next:before {
         content: #9658;
         color: #3EB49C;
         font-size: 20px;
-      }
-      .slick-slider {
+    }
+    .slick-slider {
         margin-top: 60px;
-      }
-      
-      .slick-prev, .slick-next {
+    }
+    .slick-prev,
+    .slick-next {
         left: 50%;
         transform: translate(-50%, 0) rotate(90deg);
-      }
-      .slick-next {
+    }
+    .slick-next {
         top: unset;
         bottom: -30px;
-      }
-      .slick-prev {
-        top: -30px;
-      }
-      .slick-dots{
-        display: none !important;
-
     }
-
+    .slick-prev {
+        top: -30px;
+    }
+    .slick-dots {
+        display: none !important;
+    }
+    .instagram_posts a img {
+        /* margin: 5px; */
+        width: 200px !important;
+        height: 200px !important;
+    }
 }
+
+
+/* galaxy-fold 280px */
+
+@media (max-width: 280px) {
+    .instagram_posts {
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .instagram_posts {
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+        width: 140px !important;
+        height: 140px !important;
+    }
+}
+
+/* @media (max-width: 575px) {
+    .instagram_posts{
+                margin: 10px;
+                text-align: center;
+            }
+    .instagram_posts a img {
+        margin: 5px;
+        width: 230px !important;
+        height: 230px !important;
+    }
+} */
