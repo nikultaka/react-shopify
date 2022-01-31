@@ -192,20 +192,48 @@
         padding: 6px 25px;
         font-family: Satoshi-Bold;
     }
+    .instagram_posts{
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+    .instagram_posts{
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+    }
       
 }
 
 /* Medium devices (tablets, 768px and up) */ 
 @media (min-width: 768px) and (max-width: 991px) {
+    .instagram_posts{
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+    }
     
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .instagram_posts{
+        margin: 10px;
+        text-align: center;
+    }
+    .instagram_posts a img {
+        margin: 5px;
+    }
        
 }
 

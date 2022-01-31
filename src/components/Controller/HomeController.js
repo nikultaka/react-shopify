@@ -72,6 +72,7 @@ function HomeController() {
 
 
     async function getInstagramRecentPost() {
+        // alert("insta call")
         setLoading(true)
         var instagramPost2 = [];
         const instagramRecentPostId = await productApi.getInstagramRecentPostId();
