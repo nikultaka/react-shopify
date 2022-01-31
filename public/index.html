@@ -57,7 +57,13 @@
 
   <script>
     $(document).ready(function () {
-      // $(".btn").parents('div.card').css("background", "#e7f6f3");
+      $('.card').on('shown.bs.collapse', function () {
+        $(this).css("background", "#e7f6f3");
+      });
+      $('.card').on('hide.bs.collapse', function () {
+        $(this).removeAttr('style');
+      });
+      
   //     if ($('.btn').attr('aria-expanded') == 'true') {
   //     $(".btn").parents('div.card').css("background", "#e7f6f3");
 

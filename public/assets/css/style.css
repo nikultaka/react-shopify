@@ -436,9 +436,9 @@ img{
 [data-toggle="collapse"][aria-expanded="true"] i{
     color: #1C4649!important;
 }
-[data-toggle="collapse"][aria-expanded="true"] {
+/* [data-toggle="collapse"][aria-expanded="true"] {
     background: #e7f6f3 !important;
-}
+} */
 .faq_section{
     padding: 90px 0px;
 }
