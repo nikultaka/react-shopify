@@ -53,8 +53,8 @@ const Hero = () => {
                     </div>
                     <div className="col-4 text-center">
                         <a href="#" className="iconss">
-                            {/* <i class="fa fa-bars fa-1" aria-hidden="true" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i> */}
-                            <img src={helper.ImagePath + "lock_icon.svg"} alt="a" className="img-fluid" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
+                            <i class="fa fa-bars fa-1" aria-hidden="true" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                            {/* <img src={helper.ImagePath + "lock_icon.svg"} alt="a" className="img-fluid" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" /> */}
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 {/* <button class="dropdown-item" type="button">Action</button>
                                 <button class="dropdown-item" type="button">Another action</button>

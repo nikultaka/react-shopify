@@ -1271,3 +1271,29 @@ img{
 	z-index: 9999;
 	background: url('//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif') 50% 50% no-repeat rgb(249, 249, 249);
 }
+/* .slick-prev:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: ">";
+    color: red;
+    font-size: 30px;
+  }
+  .slick-slider {
+    margin-top: 60px;
+  }
+  
+  .slick-prev, .slick-next {
+    left: 50%;
+    transform: translate(-50%, 0) rotate(90deg);
+  }
+  .slick-next {
+    top: unset;
+    bottom: -30px;
+  }
+  .slick-prev {
+    top: -30px;
+  } */
