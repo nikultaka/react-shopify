@@ -7,7 +7,7 @@ const Product = (props) => {
   // const [quantity, setQuantity] = useState(1);
   const [checkedVal, setCheckedVal] = useState(0);
   const [varientPrice, setVarientPrice] = useState(0);
-  const [soldVal, setSoldVal] = useState(localStorage.getItem('soldItems') ? localStorage.getItem('soldItems') : 58);
+  const [soldVal, setSoldVal] = useState(localStorage.getItem('soldItems') ? localStorage.getItem('soldItems') : randomNumber(50, 100));
 
   // const [varientId, setVarientId] = useState();
   let quantity = props.quantity
@@ -82,6 +82,7 @@ const Product = (props) => {
   }
   const settings = {
     dots: true,
+    arrows: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -89,6 +90,12 @@ const Product = (props) => {
     // prevArrow:true,
     // nextArrow:true,
   };
+  // next() {
+  //   this.slider.slickNext();
+  // }
+  // previous() {
+  //   this.slider.slickPrev();
+  // }
   return (
 
     <section className="product_buy_sec" id="product_buy_sec">
