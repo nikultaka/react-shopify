@@ -84,7 +84,7 @@ const Product = (props) => {
     dots: true,
     arrows: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? 1 : 3,
     slidesToScroll: 1,
     vertical: true,
     // prevArrow:true,
