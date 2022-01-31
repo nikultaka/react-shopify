@@ -615,6 +615,7 @@ img{
     background-color: #266C5E;
 }
 .instagram_posts a img{
+    height: 200px;
     width: 200px;
     margin: 0 5px;
 }

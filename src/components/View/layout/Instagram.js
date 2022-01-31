@@ -103,7 +103,7 @@ const Instagram = () => {
                                 return(
                                 <>
                                     <a href="#" key={i}>
-                                        <img src={postData.data.media_url} alt="a" style={{borderRadius : '20px'}} className="img-fluid" />
+                                        <img src={postData.data.media_url} alt="a" style={{borderRadius : '20px',height:"200px"}} className="img-fluid instaPostImg" />
                                     </a>
                                 </>
                                 )
@@ -114,7 +114,7 @@ const Instagram = () => {
                                 return(
                                 <>
                                     <a href="#" key={i}>
-                                        <img src={postData.data.media_url} alt="a" style={{borderRadius : '20px'}} className="img-fluid" />
+                                        <img src={postData.data.media_url} alt="a" style={{borderRadius : '20px'}} className="img-fluid instaPostImg" />
                                     </a>
                                 </>
                                 )
