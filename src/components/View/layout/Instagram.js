@@ -4,7 +4,6 @@ const Instagram = () => {
     if(localStorage.getItem('instagramRecentPostData') != null && typeof localStorage.getItem('instagramRecentPostData') != 'undefined') {
         instagramPostArray = JSON.parse(localStorage.getItem('instagramRecentPostData'));
     }
-    console.log(instagramPostArray)
     // const instagramPostArray = [
     //     {
     //         "data": {
@@ -112,7 +111,6 @@ const Instagram = () => {
                         </div>
                         <div className="instagram_posts mt-2">
                         {instagramPostArray.slice(4, 8).map((postData,i) => {
-                                console.log(postData.data.media_url);
                                 return(
                                 <>
                                     <a href="#" key={i}>
