@@ -189,7 +189,7 @@ const Product = (props) => {
                 <h3>{product ? product.title : ""}</h3>
               </div>
               <div className="price_box_wrap">
-                <h4><img src={helper.ImagePath + "rupi.png"} alt="a" className="img-fluid" /> {varientPrice}</h4>
+                <h4>₹{varientPrice}</h4>
                 <div className="price_midle_txt">
                   <p>MRP <span>₹1499</span></p>
                   <h5>You Save <span>₹699</span></h5>

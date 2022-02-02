@@ -21,7 +21,7 @@ const Hero = () => {
                         <div className="col-lg-4">
                             <div className="header_logo">
                                 <a href="index.html">
-                                    <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid" />
+                                    <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid hlogo" />
                                 </a>
                             </div>
                         </div>
@@ -43,12 +43,12 @@ const Hero = () => {
                 <div className="row">
                     <div className="col-4 text-center">
                         <a href="#" className="iconss">
-                            <img src={helper.ImagePath + "insta.png"} alt="a" className="img-fluid" />
+                            {/* <img src={helper.ImagePath + "insta.png"} alt="a" className="img-fluid" /> */}
                         </a>
                     </div>
                     <div className="col-4 text-center">
                         <a href="#">
-                            <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid" width="120" />
+                            <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid hlogo" width="120" />
                         </a>
                     </div>
                     <div className="col-4 text-center">
