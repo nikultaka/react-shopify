@@ -43,7 +43,7 @@ const Hero = () => {
                 <div className="row">
                     <div className="col-4 text-center">
                         <a href="#" className="iconss">
-                            <img src={helper.ImagePath + "insta.png"} alt="a" className="img-fluid" />
+                            {/* <img src={helper.ImagePath + "insta.png"} alt="a" className="img-fluid" /> */}
                         </a>
                     </div>
                     <div className="col-4 text-center">
