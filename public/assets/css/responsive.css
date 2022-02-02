@@ -213,6 +213,61 @@
         width: 150px !important;
         height: 150px !important;
     }
+    .nutriniotn_head_2 p:before{
+        position: absolute;
+        content: "";
+        left: 34%;
+        bottom: -10px;
+        width: 90px;
+        height: 5px;
+        background-color: #000;
+        /* background-size: 15px 5px; */
+        /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
+        background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ;
+        /* background-repeat: no-repeat; */
+        animation: move 15s linear infinite;
+     
+        /* animation: lineH 1s 2s infinite linear; */
+        /* animation: 30s wave linear infinite; */
+        transform: translateX(-50%);
+    }
+    .nutriniotn_head_2 b:before{
+        position: absolute;
+        content: "";
+        left: 61%;
+        bottom: 40px;
+        width: 100px;
+        height: 5px;
+        background-color: #000;
+        /* background-size: 15px 5px; */
+        /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
+        background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ;
+        /* background-repeat: no-repeat; */
+        animation: move 15s linear infinite;
+     
+        /* animation: lineH 1s 2s infinite linear; */
+        /* animation: 30s wave linear infinite; */
+        transform: translateX(-50%);
+    }
+    
+    @-webkit-keyframes move {
+        from {
+            background-position: 2px 19px;
+          }
+          to {
+            background-position: 500px 19px;
+          }
+        }
+        
+        @keyframe move {
+        from {
+            background-position: 2px 19px;
+          }
+          to {
+            background-position: 500px 19px;
+          }
+        }
+
 }
 
 
@@ -228,6 +283,7 @@
         width: 200px !important;
         height: 200px !important;
     }
+    
 }
 
 

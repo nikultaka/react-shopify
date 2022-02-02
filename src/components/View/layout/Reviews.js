@@ -5,7 +5,7 @@ const Reviews = () =>{
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="nutriniotn_head">
+              <div className="nutriniotn_head our_reviews">
                 <h2>Our Reviews</h2>
     
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

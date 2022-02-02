@@ -1182,15 +1182,12 @@ img{
     color: #000!important;
 }
 .header_section .header_profiles a img{
-    /* filter: invert(93%) sepia(0%) saturate(7473%) hue-rotate(126deg) brightness(105%) contrast(108%); */
+    filter: invert(93%) sepia(0%) saturate(7473%) hue-rotate(126deg) brightness(105%) contrast(108%);
 }
 .newClass .header_profiles a img{
-    /* filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important; */
+    filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important;
 }
-.newClass img{
-    content:url("http://notrealdomain2.com/newbanner.png")    no-repeat !important;
-    /* background: url("http://lorempixel.com/200/200/city/2")  no-repeat; */
-}
+
 
 /* width */
 .product_descriptions p::-webkit-scrollbar {
@@ -1216,8 +1213,9 @@ img{
     position: absolute;
     content: "";
     left: 50%;
+    
     bottom: -10px;
-    width: 200px;
+    width: 130px;
     height: 5px;
     background-color: #000;
     /* background-size: 15px 5px; */
@@ -1229,7 +1227,64 @@ img{
     /* animation: lineH 1s 2s infinite linear; */
     /* animation: 30s wave linear infinite; */
     transform: translateX(-50%);
-    
+}
+
+.nutriniotn_head_2 p:before{
+    position: absolute;
+    content: "";
+    left: 45%;
+    bottom: -10px;
+    width: 78px;
+    height: 5px;
+    background-color: #000;
+    /* background-size: 15px 5px; */
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
+    background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ;
+    /* background-repeat: no-repeat; */
+    animation: move 15s linear infinite;
+ 
+    /* animation: lineH 1s 2s infinite linear; */
+    /* animation: 30s wave linear infinite; */
+    transform: translateX(-50%);
+}
+
+
+.our_reviews p:before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -10px;
+    width: 368px;
+    height: 5px;
+    background-color: #000;
+    /* background-size: 15px 5px; */
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
+    background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ;
+    /* background-repeat: no-repeat; */
+    animation: move 15s linear infinite;
+ 
+    /* animation: lineH 1s 2s infinite linear; */
+    /* animation: 30s wave linear infinite; */
+    transform: translateX(-50%);
+}
+
+.nutriniotn_head_2 b:before{
+    position: absolute;
+    content: "";
+    left: 54%;
+    bottom: 40px;
+    width: 100px;
+    height: 5px;
+    background-color: #000;
+    /* background-size: 15px 5px; */
+    /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
+    background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ;
+    /* background-repeat: no-repeat; */
+    animation: move 15s linear infinite;
+ 
+    /* animation: lineH 1s 2s infinite linear; */
+    /* animation: 30s wave linear infinite; */
+    transform: translateX(-50%);
 }
 
 @-webkit-keyframes move {
@@ -1308,4 +1363,8 @@ img{
   } */
   .swal2-popup{
     background: #ecfffb !important;
+  }
+  .swal2-confirm {
+      background-color: #3e9c89 !important;
+
   }

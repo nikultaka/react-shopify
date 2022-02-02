@@ -7,31 +7,36 @@ const pop = () => {
         html: 'Subscribe to our waste-free, cruelty-free and spam-free list to enter. Winners are selected weekly.',
         input: 'text',
         inputAttributes: {
-            autocapitalize: 'off'
+            autocapitalize: 'off',
+            type:'email',
+            // placeholder:"Enter Your Email"
+            required:true
         },
         showCancelButton: true,
-        confirmButtonText: 'Look up',
+        confirmButtonText: 'Subscribe',
         showLoaderOnConfirm: true,
         preConfirm: (login) => {
-            return fetch(`//api.github.com/users/${login}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(response.statusText)
-                    }
-                    return response.json()
-                })
-                .catch(error => {
-                    Swal.showValidationMessage(
-                        `Request failed: ${error}`
-                    )
-                })
+            // alert('jj')
+            // return fetch(`//api.github.com/users/${login}`)
+            //     .then(response => {
+            //         if (!response.ok) {
+            //             throw new Error(response.statusText)
+            //         }
+            //         return response.json()
+            //     })
+            //     .catch(error => {
+            //         Swal.showValidationMessage(
+            //             `Request failed: ${error}`
+            //         )
+            //     })
         },
         allowOutsideClick: () => !Swal.isLoading()
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
-                title: `${result.value.login}'s avatar`,
-                imageUrl: result.value.avatar_url
+                title: `Thanks For Subscribe`,
+                icon: 'success',
+                // imageUrl: result.value.avatar_url
             })
         }
     })
