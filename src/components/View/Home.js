@@ -11,26 +11,31 @@ import SeeOn from "./layout/SeeOn";
 import SignUp from "./layout/Signup";
 import Slider from "./layout/Slider";
 import WhyWe from "./layout/WhyWe";
+import PopUpBtn from "./PopUpBtn";
 
-const Home = (props) =>{
-    return(
+
+
+
+const Home = (props) => {
+    return (
         <>
-        
-        <Hero/>
-        <SeeOn/>
-        <Product product={props.product}  handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId}/>
-        <Nutrition/>
-        <WhyWe/>
-        <Slider/>
-        <AboutUs/>
-        <Reviews/>
-        <Faq/>
-        <SignUp/>
-        <Instagram/>
-        <Footer/>
-        <MobileStickey  handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId}/>
+
+            <Hero />
+            <SeeOn />
+            <Product product={props.product} handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId} />
+            <Nutrition />
+            <WhyWe />
+            <Slider />
+            <AboutUs />
+            <Reviews />
+            <Faq />
+            <SignUp />
+            <Instagram />
+            <Footer />
+            <MobileStickey handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId} />
+            <PopUpBtn />
         </>
-        
+
     )
 
 }
