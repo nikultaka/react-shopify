@@ -48,7 +48,7 @@ const Hero = () => {
                     </div>
                     <div className="col-4 text-center">
                         <a href="#">
-                            <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid" width="120" />
+                            <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid hlogo" width="120" />
                         </a>
                     </div>
                     <div className="col-4 text-center">

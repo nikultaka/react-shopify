@@ -110,8 +110,11 @@
     $(window).scroll(function () {
       if ($(this).scrollTop() > 10) {
         $('.mobile_menu_sec').addClass('newClass');
+        $('.hlogo').attr('src', '/assets/images/ftr_logo.svg');
       } else {
         $('.mobile_menu_sec').removeClass('newClass');
+        $('.hlogo').attr('src','/assets/images/logo.svg');
+
       }
     });
   </script>
