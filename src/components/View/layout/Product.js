@@ -32,7 +32,7 @@ const Product = (props) => {
 
   useEffect(() => {
     (async () => {
-      let price = product.variants[0].price
+      let price = product.variants && product.variants[0].price
       if (price > 0) {
         await (sp(product.variants[0].price, product.variants[0].id))
       }
