@@ -16,6 +16,7 @@
     "react-slick": "^0.28.1",
     "react-toastify": "^8.1.0",
     "shopify-buy": "^2.14.0",
+    "sweetalert2": "^11.3.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

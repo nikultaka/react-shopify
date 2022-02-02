@@ -1182,10 +1182,14 @@ img{
     color: #000!important;
 }
 .header_section .header_profiles a img{
-    filter: invert(93%) sepia(0%) saturate(7473%) hue-rotate(126deg) brightness(105%) contrast(108%);
+    /* filter: invert(93%) sepia(0%) saturate(7473%) hue-rotate(126deg) brightness(105%) contrast(108%); */
 }
 .newClass .header_profiles a img{
-    filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important;
+    /* filter: invert(0%) sepia(100%) saturate(7463%) hue-rotate(80deg) brightness(84%) contrast(107%)!important; */
+}
+.newClass img{
+    content:url("http://notrealdomain2.com/newbanner.png")    no-repeat !important;
+    /* background: url("http://lorempixel.com/200/200/city/2")  no-repeat; */
 }
 
 /* width */
@@ -1213,8 +1217,8 @@ img{
     content: "";
     left: 50%;
     bottom: -10px;
-    width: 500px;
-    height: 4px;
+    width: 200px;
+    height: 5px;
     background-color: #000;
     /* background-size: 15px 5px; */
     /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
@@ -1302,3 +1306,6 @@ img{
   .slick-prev {
     top: -30px;
   } */
+  .swal2-popup{
+    background: #ecfffb !important;
+  }

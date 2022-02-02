@@ -96,10 +96,14 @@
     $(window).scroll(function () {
       if ($(this).scrollTop() > 10) {
         $('.header_section').addClass('newClass');
+        $('.hlogo').attr('src', '/assets/images/ftr_logo.svg');
       } else {
         $('.header_section').removeClass('newClass');
+        $('.hlogo').attr('src','/assets/images/logo.svg');
+
       }
     });
+
   </script>
 
   <script>
@@ -112,7 +116,7 @@
     });
   </script>
   <!-- plugin js file end -->
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Custom js file Start -->
   <script src="%PUBLIC_URL%/assets/js/custom.js"></script>
   <!-- Custom js file end -->
