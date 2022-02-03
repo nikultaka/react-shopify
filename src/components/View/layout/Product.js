@@ -32,7 +32,7 @@ const Product = (props) => {
 
   useEffect(() => {
     (async () => {
-      let price = product.variants[0].price
+      let price = product.variants && product.variants[0].price
       if (price > 0) {
         await (sp(product.variants[0].price, product.variants[0].id))
       }
@@ -86,7 +86,8 @@ const Product = (props) => {
     speed: 500,
     slidesToShow: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? 1 : 3,
     slidesToScroll: 1,
-    vertical: true,
+    vertical: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? false:true,
+    rtl: false
     // prevArrow:true,
     // nextArrow:true,
   };
@@ -103,30 +104,39 @@ const Product = (props) => {
         <div className="row">
           <div className="col-lg-1 pr-lg-0">
             <div className="sidebar_img">
-              <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              {
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
                 <Slider {...settings}>
-                  {product && product.images?.length > 0 &&
-                    product.images.map((img, key1) => {
-                      return (
-                        <a className="nav-link mr-5" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
-                          <img src={img.src} alt="a" className="img-fluid mr-5" />
-                        </a>
-                      )
-                    })
+                {product && product.images?.length > 0 &&
+                  product.images.map((img, key2) => {
+                    return (
+                      <div key={key2} className={key2 == 0 ? "tab-pane fade show active p-2 mr-2 ml-2" : "tab-pane fade show p-2 mr-2 ml-2"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
+                      <img src={img.src} alt="a" className="img-fluid" />
+                    </div>
+                    )
+                  })
 
-                  }
-                </Slider>
+                }
+              </Slider>
+              :
+              <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <Slider {...settings}>
+                {product && product.images?.length > 0 &&
+                  product.images.map((img, key1) => {
+                    return (
+                      <a className="nav-link mr-5" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
+                        <img src={img.src} alt="a" className="img-fluid mr-5" />
+                      </a>
+                    )
+                  })
 
-                {/* <a className="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                  <img src={helper.ImagePath + "glow_main_img.png"} alt="a" className="img-fluid" />
-                </a>
-                <a className="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                  <img src={helper.ImagePath + "glow_main_img.png"} alt="a" className="img-fluid" />
-                </a>
-                <a className="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                  <img src={helper.ImagePath + "glow_main_img.png"} alt="a" className="img-fluid" />
-                </a> */}
-              </div>
+                }
+              </Slider>
+            </div>
+              }
+            
+              
+         
             </div>
           </div>
           <div className="col-lg-5">

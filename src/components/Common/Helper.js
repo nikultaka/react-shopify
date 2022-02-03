@@ -1,4 +1,4 @@
-const Mode = "developer"
+const Mode = "Production"
 
 
 let helper = {

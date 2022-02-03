@@ -219,7 +219,7 @@
         left: 34%;
         bottom: -10px;
         width: 90px;
-        height: 30px;
+        height: 40px;
         background-color: #000;
         /* background-size: 15px 5px; */
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
@@ -227,7 +227,7 @@
     background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
         /* background-repeat: no-repeat; */
-        animation: move 15s linear infinite;
+        /* animation: move 15s linear infinite; */
      
         /* animation: lineH 1s 2s infinite linear; */
         /* animation: 30s wave linear infinite; */
@@ -239,7 +239,7 @@
         left: 61%;
         bottom: 40px;
         width: 100px;
-        height: 30px;
+        height: 40px;
         background-color: #000;
         /* background-size: 15px 5px; */
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
@@ -247,7 +247,7 @@
     background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
         /* background-repeat: no-repeat; */
-        animation: move 15s linear infinite;
+        /* animation: move 15s linear infinite; */
      
         /* animation: lineH 1s 2s infinite linear; */
         /* animation: 30s wave linear infinite; */

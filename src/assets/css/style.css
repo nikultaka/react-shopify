@@ -1222,3 +1222,17 @@ img{
         width: 95%;opacity: 0;
     }
 }
+
+::-webkit-scrollbar {
+    width: 0 !important;  /* Remove scrollbar space */
+    background: transparent !important;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000 !important;
+}
+
+
+.youtube_vdo_embaded {
+    text-align: center !important;
+}

@@ -77,7 +77,11 @@ function HomeController() {
         var instagramPost2 = [];
         const instagramRecentPostId = await productApi.getInstagramRecentPostId();
         if (instagramRecentPostId && instagramRecentPostId.status == 200) {
-            var data = instagramRecentPostId.data.data.slice(0, 8)
+            var data = '';
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
+            data = instagramRecentPostId.data.data.slice(0, 8)
+            :
+            data = instagramRecentPostId.data.data
             if (data.length > 0) {
                 await Promise.all(data.map(async (postId) => {
                     const instagramRecentPostData = await productApi.getInstagramRecentPostData(postId.id);
