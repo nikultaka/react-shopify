@@ -45,12 +45,23 @@
         text-align: center;
         margin-bottom: 15px;
         margin-top: 28px;
-        margin-bottom: 53px;
+        margin-bottom: 60px;
+        font-size: 20px;
+        vertical-align: middle;
     }
     .price_midle_txt {
         margin-top: 15px;
         margin-bottom: 20px;
         margin-left: 17px;
+    }
+    .price_midle_txt h6 {
+        font-size: 13px;
+    }
+    .price_midle_txt h5 {
+        font-size: 13px;
+    }
+    .price_midle_txt h5 span {
+        font-size: 13px;
     }
     .product_pick_wrap .media {
         padding: 12px;

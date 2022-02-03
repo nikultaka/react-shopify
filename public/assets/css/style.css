@@ -1390,3 +1390,8 @@ img{
 .youtube_vdo_embaded {
     text-align: center !important;
 }
+
+#dropdownMenu2 {
+    vertical-align: bottom;
+    margin-top: 14px;
+}
