@@ -205,7 +205,7 @@ const Product = (props) => {
                   <h5>You Save <span>₹699</span></h5>
                   <h6>Inclusive of all Taxes.</h6>
                 </div>
-                <div className="media">
+                <div className="media sold_qty">
                   <img src={helper.ImagePath + "amp.png"} alt="a" className="img-fluid" />
                   <div className="media-body">
                     <h6>{soldVal} Sold</h6>

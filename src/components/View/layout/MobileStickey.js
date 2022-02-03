@@ -14,7 +14,25 @@ const MobileStickey = (props) => {
         setQuantity(value)
     }
     return (
+        
         <div className="mobile_sticky d-lg-none">
+            <div className="row sticky_text">
+                <div className="col-4">
+                    <div className="ftr_copy">
+                        Four Month Supply
+                    </div>    
+                </div>
+                <div className="col-4">
+                    <div className="ftr_copy">
+                        Save 38%
+                    </div>    
+                </div>
+                <div className="col-4">
+                    <div className="ftr_copy">
+                        Free US Shipping
+                    </div>    
+                </div>
+            </div>    
             <div className="d-flex align-items-center">
                 <div className="quantity">
                     <i className="fa fa-minus quantity__minus" onClick={() => minusValue(quantity)}></i>
