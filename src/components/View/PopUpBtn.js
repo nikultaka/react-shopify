@@ -9,7 +9,7 @@ const pop = () => {
         inputAttributes: {
             autocapitalize: 'off',
             type:'email',
-            // placeholder:"Enter Your Email"
+            placeholder:"Enter Your Email",
             required:true
         },
         showCancelButton: true,
@@ -46,9 +46,9 @@ const pop = () => {
 const PopUpBtn = () => {
     return (
         <>
-            <div class="p-fixed z-5 transition-all" style={{ bottom:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? "55px":"15px", left: "15px", position: "fixed", background: "#3eb49c", cursor: "pointer" }} onClick={()=>pop()}>
-                <div class="transition-all d-inline-block rounded sectionBg fwb text-mint f-20 shadow p-3 line-height-smaller p-relative animated-pastel-gradient mail-button" style={{ border: "3px solid white", borderRadius: "100px !important" }}>
-                    <div class="animated tada d-inline-block infinite " style={{ animationDuration: "2s" }}>👋</div>
+            <div className="p-fixed z-5 transition-all" style={{ bottom:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? "55px":"15px", left: "15px", position: "fixed", background: "#3eb49c", cursor: "pointer" }} onClick={()=>pop()}>
+                <div className="transition-all d-inline-block rounded sectionBg fwb text-mint f-20 shadow p-3 line-height-smaller p-relative animated-pastel-gradient mail-button" style={{ border: "3px solid white", borderRadius: "100px !important" }}>
+                    <div className="animated tada d-inline-block infinite " style={{ animationDuration: "2s" }}>👋</div>
                 </div>
             </div>
 
