@@ -86,7 +86,7 @@ const Nutrition = () => {
                       <div class="media">
                         <img src={helper.ImagePath + "avatar.svg"} alt="a" className="img-fluid" />
                         <div class="media-body">
-                          <h6>Vitamins</h6>
+                          <h6>Vitamins</h6>  
                           <p>Our bodies cannot produce their own vitamins. Glow x Grow is bursting with vitamins which act as defenders, maintenance workers and healers for your skin and hair. They are also building blocks that keep your hardworking body running!</p>
                         </div>
                       </div>

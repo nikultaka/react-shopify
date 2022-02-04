@@ -7,7 +7,7 @@ const WhyWe =() =>{
             <div className="col-lg-12">
               <div className="nutriniotn_head nutriniotn_head_2">
                 <h2>Why We are Better!</h2>
-                <p>No  Fakeness, Only  Goodness!</p><b></b>
+                <p>No Fakeness,&nbsp;&nbsp; Only  Goodness!</p><b></b>
               </div>
             </div>
           </div>
