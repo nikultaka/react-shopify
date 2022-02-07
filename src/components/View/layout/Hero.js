@@ -92,7 +92,7 @@ const Hero = () => {
 
                             <div className="hero_bttn">
                                 <a href="#">BUY NOW</a>
-                                <a href="#">LEARN MORE</a>
+                                <a href="#"></a>
                             </div>
                         </div>
                     </div>

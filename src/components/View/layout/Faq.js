@@ -64,7 +64,7 @@
                                         <div className="card">
                                             <div className="card-header" id="headingFour">
                                                 <h2 className="mb-0">
-                                                    <button type="button" className="btn collapsed" data-toggle="collapse" data-target="#collapseFour"><span> <h6> Do I need to consult a doctor before using Glow x Grow?</h6>
+                                                    <button type="button" className="btn collapsed" data-toggle="collapse" data-target="#collapseFour"><span> <h6>Do I need to consult a doctor before using Glow x Grow?</h6>
                                                         <i className="fa fa-plus"></i>
                                                     </span></button>
                                                 </h2>
