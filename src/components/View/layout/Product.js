@@ -146,7 +146,7 @@ const Product = (props) => {
                   product.images.map((img, key2) => {
                     return (
                       <div key={key2} className={key2 == 0 ? "tab-pane fade show active" : "tab-pane fade show"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
-                        <img src={img.src} alt="a" className="img-fluid" />
+                        <img src={img.src} alt="a" className="img-fluid"  style={{borderRadius: '10px'}}/>
                       </div>
                     )
 
