@@ -169,24 +169,24 @@ const Product = (props) => {
             <div className="product_feat_wrap">
               <ul>
                 <li>
-                  <p> <img src={helper.ImagePath + "checkbox.png"} alt="a" className="img-fluid" /> Fast Shipping</p>
+                  <p> <img src={helper.ImagePath + "111+BENEFITS-12.png"} alt="a" className="img-fluid" /></p>
                 </li>
                 <li>
-                  <p> <img src={helper.ImagePath + "checkbox.png"} alt="a" className="img-fluid" /> Easy Returns</p>
+                  <p> <img src={helper.ImagePath + "AYUSH.png"} alt="a" className="img-fluid" /></p>
                 </li>
                 <li>
-                  <p> <img src={helper.ImagePath + "checkbox.png"} alt="a" className="img-fluid" /> Easy Returns</p>
+                  <p> <img src={helper.ImagePath + "FlavorsPreservatives.png"} alt="a" className="img-fluid" /></p>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <p> <img src={helper.ImagePath + "checkbox.png"} alt="a" className="img-fluid" /> Fast Shipping</p>
+                  <p> <img src={helper.ImagePath + "NonGMO.png"} alt="a" className="img-fluid" /> </p>
                 </li>
                 <li>
-                  <p> <img src={helper.ImagePath + "checkbox.png"} alt="a" className="img-fluid" /> Easy Returns</p>
+                  <p> <img src={helper.ImagePath + "USFDA-20.png"} alt="a" className="img-fluid" /></p>
                 </li>
                 <li>
-                  <p> <img src={helper.ImagePath + "checkbox.png"} alt="a" className="img-fluid" /> Easy Returns</p>
+                  <p> <img src={helper.ImagePath + "Vegetarian.png"} alt="a" className="img-fluid" /></p>
                 </li>
               </ul>
             </div>
@@ -280,16 +280,18 @@ const Product = (props) => {
                 <div className="tab-content" id="pills-tabContent">
                   <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div className="product_descriptions">
-                      <p>Glow x Grow, a power packed blend of 38 ingredients that delivers the perfect nutrition profile of vitamins, minerals, antioxidants, fiber and probiotics in just one sachet! We never use any artificial flavors, colors or preservatives.
-                        <br />
-                        We are on a mission to make you feel great!
+                      <p>  Your daily dose of nutrition now in one sachet!  <br />
+                        
+                      Glow x Grow, a power packed blend of 38 ingredients that delivers the perfect nutrition profile of vitamins, minerals, antioxidants, fiber and probiotics in just one sachet! We never use any artificial flavors, colors or preservatives.
                       </p>
                     </div>
                   </div>
                   <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div className="product_descriptions">
-                      <p>38 global ingredients that make Glow x Grow the most potent blend ever! <br />
-                        Lemon powder (20%), Orange powder, Beet root powder (3%), Carrot powder (3%), Oats fiber, Tomato powder, Rock salt, Ashwagandha extract 2.5%, Banana powder, Barley grass powder, Black salt, Spinach Powder (2%), Wheat Grass Powder (2%), Mint Leaves Powder (2%), Bottle gourd powder (1%), Alfalfa powder, Apple powder, Celery Leaves Powder, Inulin, Moringa Powder, Sunflower Lecithin, Tamarind powder, Strawberry powder, Acerola cherry extract 17%, Almond Flour, Amchur Powder, Amla powder, Blueberry extract (1%), Coriander leaves powder, Cranberry extract, Curcumin 95%, Flaxseed Powder 50%, Ginseng extract, Goji berry extract, Green tea extract 98%, Sea Buckthorn, Spirulina Powder, Vitamin and Mineral Mix, Xanthan Gum (E415), Stevia, Probiotics (Lactobacillus acidophilus, Lactobacillus rhamnosus, Lactobacillus fermentum, Bifidobacterium longum, Bifidobacterium bifidum, Saccharomyces boulardii) 1.5 Billion CFU Per Serving (7g)
+                      <p>
+                    
+                      38 global ingredients that make Glow x Grow the most potent blend ever! <br />
+                      Lemon powder (20%), Orange powder, Beet root powder (3%), Carrot powder (3%), Oats fiber, Tomato powder, Rock salt, Ashwagandha extract 2.5%, Banana powder, Barley grass powder, Black salt, Spinach Powder (2%), Wheat Grass Powder (2%), Mint Leaves Powder (2%), Bottle gourd powder (1%), Alfalfa powder, Apple powder, Celery Leaves Powder, Inulin, Moringa Powder, Sunflower Lecithin, Tamarind powder, Strawberry powder, Acerola cherry extract 17%, Almond Flour, Amchur Powder, Amla powder, Blueberry extract (1%), Coriander leaves powder, Cranberry extract, Curcumin 95%, Flaxseed Powder 50%, Ginseng extract, Goji berry extract, Green tea extract 98%, Sea Buckthorn, Spirulina Powder, Vitamin and Mineral Mix, Xanthan Gum (E415), Stevia, Probiotics (Lactobacillus acidophilus, Lactobacillus rhamnosus, Lactobacillus fermentum, Bifidobacterium longum, Bifidobacterium bifidum, Saccharomyces boulardii) 1.5 Billion CFU Per Serving (7g)
                       </p>
                     </div>
                   </div>
@@ -298,9 +300,9 @@ const Product = (props) => {
                       <p>
                         Step 1 : Pour one sachet of Glow x Grow into 200 ml of water or your favorite drink.<br />
                         Step 2 : Stir/ blend until fully dissolved.<br />
-                        Step 3 : Keep glowing and growing.<br />
+                        Step 3 : Enjoy your drink and keep Glowing and Growing!.<br />
                         <b>Consume one sachet daily at any time. Best results when taken in the morning on an empty stomach. </b><br />
-                        Recommended Dosage : 1 serving per day or as suggested by healthcare professionals.<br />
+                        Recommended Dosage :1 serving per day or as suggested by healthcare professionals.<br />
                         Tastes Like : Lemon and Mint. So refreshing, there’s nothing quite like it!
 
 

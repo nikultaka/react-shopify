@@ -32,6 +32,9 @@ function HomeController() {
 
     useEffect(() => {
         (async () => {
+
+            
+
             setLoading(true)
             const productList = await productApi.getProduct();
             if (productList && productList[0]) {
@@ -56,6 +59,7 @@ function HomeController() {
             //     ToastAlert({ msg: instagramRecentPostId.error.error_user_msg, msgType: 'error' });
             // }
             var getCookieVal = getCookie('count');
+            console.log(getCookieVal);
             if (getCookieVal == '' && getCookieVal != 1) {
                 var expire = new Date();
                 expire.setFullYear(now.getFullYear());

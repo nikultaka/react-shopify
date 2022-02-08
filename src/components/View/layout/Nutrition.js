@@ -1,7 +1,7 @@
 import helper from "../../Common/Helper";
 const Nutrition = () => {
-  const imgStyle={
-    width:"100px"
+  const imgStyle = {
+    width: "100px"
   }
   return (
     <section className="nutrition_section">
@@ -89,8 +89,8 @@ const Nutrition = () => {
                       <div class="media">
                         <img src={helper.ImagePath + "VITAMINS.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">
-                          <h6>Vitamins</h6>  
-                          <p>Our bodies cannot produce their own vitamins. Glow x Grow is bursting with vitamins which act as defenders, maintenance workers and healers for your skin and hair. They are also building blocks that keep your hardworking body running!</p>
+                          <h6>Vitamins</h6>
+                          <p>More than 75% Indians suffer from vitamin deficiency, leading to poor overall health. GxG is packed with essential vitamins to superboost your skin, hair & body.</p>
                         </div>
                       </div>
                     </div>
@@ -99,19 +99,19 @@ const Nutrition = () => {
                         <img src={helper.ImagePath + "MINERALS.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">
                           <h6>Minerals</h6>
-                          <p>Our body cannot create a single mineral. So we created a mineral jackpot that helps you get healthy youthful skin and long lustrous hair from the inside.  </p>
+                          <p>Lack of minerals is a major cause of weak hair roots and skin concerns. GxG gives you your daily dose of minerals in one single sachet.</p>
                         </div>
                       </div>
                     </div>
                     <div class="placed_img margin_btm">
-                      <img src={helper.ImagePath + "RedefineNutrition.png"} alt="a" className="img-fluid" style={{backgroundColor:"#41a0e1" ,borderRadius: "12px"}} />
+                      <img src={helper.ImagePath + "RedefineNutrition.png"} alt="a" className="img-fluid" style={{ backgroundColor: "#41a0e1", borderRadius: "12px" }} />
                     </div>
                     <div class="nutrition_feat_box margin_left_2">
                       <div class="media">
                         <img src={helper.ImagePath + "HighFiber.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">
                           <h6>Fiber</h6>
-                          <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer ac diam vulputate, <br /> fermentum eros in, finibus erat. </p>
+                          <p>Poor fiber intake plays a large role in acne breakouts, poor gut health & lack of sleep. GxG helps you begin your day the right way with its fiber-rich formulation.</p>
                         </div>
                       </div>
                     </div>
@@ -123,20 +123,21 @@ const Nutrition = () => {
                       <div class="media">
                         <img src={helper.ImagePath + "Antioxidants-27.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">
-                          <h6>Antioxidants</h6>
-                          <p>Antioxidants deserve all the hype indeed! Glow x Grow being a powerhouse of antioxidants helps with free radical damage, aging and skin repair. They also maintain scalp health & stimulate hair growth! </p>
+                          <h6>Anti-oxidants</h6>
+                          <p>Always wanted young, glowing & radiant skin? Let GxG,  with its supercharged antioxidant rich ingredients work its magic.</p>
                         </div>
                       </div>
                     </div>
                     <div class="placed_img margin_btm text-center ">
-                      <img src={helper.ImagePath + "RedefineNutrition.png"} alt="a" className="img-fluid" style={{backgroundColor:"#41a0e1" ,borderRadius: "12px"}}  />
+                      <img src={helper.ImagePath + "RedefineNutrition.png"} alt="a" className="img-fluid" style={{ backgroundColor: "#41a0e1", borderRadius: "12px" }} />
                     </div>
                     <div class="nutrition_feat_box margin_left_2 margin_btm_2">
                       <div class="media">
                         <img src={helper.ImagePath + "PROBIOTICS.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">
-                          <h6>Probiotics</h6>
-                          <p>Your gut is the most important organ to keep your body smoooooth. We packed in 1.5 billion probiotics to strengthen your roots and control your breakouts. </p>
+                          <h6>ProBiotics</h6>
+                          <p>Healthy Gut → Healthy Brain → Healthy Skin → Healthy Hair → Happy You.
+                            Power packed with probiotics, GxG is the first step to a happier you.</p>
                         </div>
                       </div>
                     </div>
