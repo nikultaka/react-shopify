@@ -94,11 +94,25 @@ function product() {
         // return res;
     }
 
+    const checkUrlExpiredOrNot = async (imgUrl) => {
+        let res = {};
+        return await resolve(
+            await axios({
+                method: "get",
+                url: imgUrl,
+                ContentType: 'application/json',
+            }).then(response => response.data)
+        )
+    }
+
+    
+
     return {
         buyProduct,
         getProduct,
         getInstagramRecentPostId,
-        getInstagramRecentPostData
+        getInstagramRecentPostData,
+        checkUrlExpiredOrNot
     }
 
 }

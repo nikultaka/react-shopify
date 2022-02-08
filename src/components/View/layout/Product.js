@@ -86,7 +86,7 @@ const Product = (props) => {
     speed: 500,
     slidesToShow: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? 1 : 3,
     slidesToScroll: 1,
-    vertical: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? false:true,
+    vertical: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? false : true,
     rtl: false
     // prevArrow:true,
     // nextArrow:true,
@@ -106,37 +106,37 @@ const Product = (props) => {
             <div className="sidebar_img">
               {
                 /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
-                <Slider {...settings}>
-                {product && product.images?.length > 0 &&
-                  product.images.map((img, key2) => {
-                    return (
-                      <div key={key2} className={key2 == 0 ? "tab-pane fade show active p-2 mr-2 ml-2" : "tab-pane fade show p-2 mr-2 ml-2"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
-                      <img src={img.src} alt="a" className="img-fluid" />
-                    </div>
-                    )
-                  })
+                  <Slider {...settings}>
+                    {product && product.images?.length > 0 &&
+                      product.images.map((img, key2) => {
+                        return (
+                          <div key={key2} className={key2 == 0 ? "tab-pane fade show active p-2 mr-2 ml-2" : "tab-pane fade show p-2 mr-2 ml-2"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
+                            <img src={img.src} alt="a" className="img-fluid" />
+                          </div>
+                        )
+                      })
 
-                }
-              </Slider>
-              :
-              <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <Slider {...settings}>
-                {product && product.images?.length > 0 &&
-                  product.images.map((img, key1) => {
-                    return (
-                      <a className="nav-link mr-5" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
-                        <img src={img.src} alt="a" className="img-fluid mr-5" />
-                      </a>
-                    )
-                  })
+                    }
+                  </Slider>
+                  :
+                  <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <Slider {...settings}>
+                      {product && product.images?.length > 0 &&
+                        product.images.map((img, key1) => {
+                          return (
+                            <a className="nav-link mr-5" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
+                              <img src={img.src} alt="a" className="img-fluid mr-5" />
+                            </a>
+                          )
+                        })
 
-                }
-              </Slider>
-            </div>
+                      }
+                    </Slider>
+                  </div>
               }
-            
-              
-         
+
+
+
             </div>
           </div>
           <div className="col-lg-5">

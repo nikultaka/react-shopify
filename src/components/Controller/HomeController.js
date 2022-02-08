@@ -35,7 +35,6 @@ function HomeController() {
             if (productList && productList[0]) {
                 setProduct(productList[0])
             }
-
             // const instagramRecentPostId = {}
             // const instagramRecentPostId = await productApi.getInstagramRecentPostId();
             // if (instagramRecentPostId && instagramRecentPostId.status == 200) {
@@ -53,16 +52,39 @@ function HomeController() {
             //     setLoading(false)
             //     ToastAlert({ msg: instagramRecentPostId.error.error_user_msg, msgType: 'error' });
             // }
-            var getCookieVal = getCookie('count'); 
+
+            var getCookieVal = getCookie('count');
             if (getCookieVal == '' && getCookieVal != 1) {
+                // var expire = new Date();
+                // expire.setFullYear(now.getFullYear());
+                // expire.setMonth(now.getMonth());
+                // expire.setDate(now.getDate() + 1);
+                // expire.setHours(0);
+                // expire.setMinutes(0);
+                // document.cookie = "count=" + 1 + ";expires=" + expire.toString() + "";
                 var expire = new Date();
-                expire.setFullYear(now.getFullYear());
-                expire.setMonth(now.getMonth());
-                expire.setDate(now.getDate() + 1);
-                expire.setHours(0);
-                expire.setMinutes(0);
-                document.cookie = "count=" + 1 + ";expires=" + expire.toString() + "";
+                expire.setTime(expire.getTime() + 1 * 3600 * 1000);
+                document.cookie = "count=" + 1 + ";expires=" + expire.toUTCString() + "; path=/ ";
                 await getInstagramRecentPost()
+            } else {
+                var instagramPostArray = JSON.parse(localStorage.getItem('instagramRecentPostData'));
+                // console.log('instagramPostArray');
+                // Object.values(instagramPostArray).map((instagramPost) => {
+                    // var mapCount = 0
+                    
+                        await Promise.all(instagramPostArray.map(async (instagramPost, t) => {
+                            // console.log(instagramPost.data.media_url);
+                            // await checkUrlExpiredOrNot(instagramPost.data.media_url);
+                            await checkUrlExpiredOrNot("https://scontent.cdninstagram.com/v/t51.2885-15/96225438_154623232742454_973649221027714195_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=BAdpAPwYTKEAX_3M56o&_nc_ht=scontent.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AT9Ukl4gFwkl9SZzH1ViU736MMBBWBxsXXnaD_KS07p2jw&oe=620043F8",
+                                function () {
+                                    // alert("good")
+                                }, async function () {
+                                    await getInstagramRecentPost()
+                                });
+                            // console.log(checkUrlExpiredOrNot);
+        
+                        }))
+            
             }
 
             setLoading(false)
@@ -70,6 +92,13 @@ function HomeController() {
         })();
     }, []);
 
+    async function checkUrlExpiredOrNot(src, good, bad) {
+
+        var img = new Image();
+        img.onload = good;
+        img.onerror = bad;
+        img.src = src;
+    }
 
     async function getInstagramRecentPost() {
         // alert("insta call")
@@ -77,13 +106,16 @@ function HomeController() {
         var instagramPost2 = [];
         const instagramRecentPostId = await productApi.getInstagramRecentPostId();
         if (instagramRecentPostId && instagramRecentPostId.status == 200) {
-            var data = '';
-            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
-            data = instagramRecentPostId.data.data.slice(0, 8)
-            :
-            data = instagramRecentPostId.data.data
+            // var data = '';
+            // /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
+            //     data = instagramRecentPostId.data.data.slice(0, 8)
+            //     :
+            //     data = instagramRecentPostId.data.data 
+            var data = instagramRecentPostId.data.data.slice(0, 8)
+            // console.log(data);
+            // return false;
             if (data.length > 0) {
-                await Promise.all(data.map(async (postId) => {
+                await Promise.all(data.map(async (postId, t) => {
                     const instagramRecentPostData = await productApi.getInstagramRecentPostData(postId.id);
                     if ((instagramRecentPostData) && instagramRecentPostData != '') {
                         instagramPost2.push(instagramRecentPostData)
