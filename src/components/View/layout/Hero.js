@@ -2,9 +2,18 @@ import helper from "../../Common/Helper";
 import { Link } from "react-router-dom";
 import Product from "./Product";
 // import banner1 from "../../../assets/images/banner1.jpg"
-const Hero = () => {
+const Hero = (props) => {
+    const styleMy = {
+        background: 'red',
+        height: '500px',
+        width: '100%',
+        // display: 'list-item',
+        // top: 50,
+        bottom: '50%',
+        position: 'fixed'
+    }
     return (
-        <section className="hero_section">
+        <section className="hero_section" style={{    zIndex: '0 !important'}}>
             {/* <!-- header section start --> */}
             <header className="header_section d-none d-lg-block">
                 <div className="container">
@@ -39,7 +48,8 @@ const Hero = () => {
             {/* <!-- header section end --> */}
 
             {/* <!-- mobile head start --> */}
-            <div className="mobile_menu_sec d-lg-none">
+            <div className="mobile_menu_sec d-lg-none" style={{zIndex:props.isopen ? 0 :9999 }}>
+
                 <div className="row">
                     <div className="col-4 text-center">
                         <a href="#" className="iconss">
@@ -53,25 +63,23 @@ const Hero = () => {
                     </div>
                     <div className="col-4 text-center">
                         <a href="#" className="iconss">
-                            <i class="fa fa-bars fa-1" aria-hidden="true" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                            {/* <img src={helper.ImagePath + "lock_icon.svg"} alt="a" className="img-fluid" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" /> */}
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                {/* <button class="dropdown-item" type="button">Action</button>
-                                <button class="dropdown-item" type="button">Another action</button>
-                                <button class="dropdown-item" type="button">Something else here</button> */}
-                                <li><a class="dropdown-item" href={"#product_buy_sec"}>Shop</a></li>
+                            {/* <i class="fa fa-bars fa-1" aria-hidden="true" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="menu">
+                                <li><a class="dropdown-item" href="#product_buy_sec">Shop</a></li>
                                 <li><a class="dropdown-item" href="#aboutus_section">About</a></li>
                                 <li><a class="dropdown-item" href="#reviews_section">Reviews</a></li>
-                            </div>
+                            </div> */}
+                            <i class="fa fa-bars fa-1" onClick={props.toggleDrawer('right', true)}></i>
+
                         </a>
-                        {/* <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div> */}
+
                     </div>
+
                 </div>
             </div>
+            {/* <div className="mobnav" style={styleMy}>
+
+            </div> */}
             {/* <!-- mobile head end --> */}
 
             <div className="container">
@@ -84,7 +92,7 @@ const Hero = () => {
 
                             <div className="hero_bttn">
                                 <a href="#">BUY NOW</a>
-                                <a href="#">LEARN MORE</a>
+                                <a href="#"></a>
                             </div>
                         </div>
                     </div>

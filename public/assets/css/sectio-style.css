@@ -1,0 +1,54 @@
+@media(max-width:767px) {
+    .nutrition_section{
+        position: relative;
+    }
+    .nutrition_section .row{
+        position: unset;
+    }
+    .nutrition_section .col-lg-12, .nutrition_section .col-lg-6{
+        position: unset;
+    }
+    .nutrition_section .nutriniotn_head{
+        margin-bottom: 180px !important;
+    }
+    .nutrition_section .nutrition-box-1{
+        margin: 0;
+        position: absolute;
+        left: 23px;
+        top: 220px;
+    }
+    .nutrition_section .nutrition-box-2 {
+        right: 8px;
+        position: absolute;
+        margin-top: 0px;
+    }
+    .nutrition_section .nutrition-box-4 {
+        margin: 0;
+        left: 23px;
+        position: absolute;
+        bottom: 662px;
+    }
+    .nutrition_section .nutrition-box-3 {
+        bottom: 514px;
+        position: absolute;
+        margin: 0;
+        right: 8px;
+    }
+    .nutrition_section .nutrition_txt_wrap{
+        padding-bottom: 100%;
+    }
+    .nutrition_section .nutrition-box-5 {
+        margin: 0 auto;
+        display: flex;
+        width: 60%;
+    }
+    .nutrition_section .placed_img.margin_btm.text-center {
+        margin-top: 126px;
+    }
+    .nutrition_section .nutrition_feat_box{
+        width: 60%;
+    }
+    .nutrition_section .nutrition_feat_box .media img{
+        width: 22%;
+    }
+}

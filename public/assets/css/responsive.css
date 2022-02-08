@@ -45,13 +45,35 @@
         text-align: center;
         margin-bottom: 15px;
         margin-top: 28px;
-        margin-bottom: 53px;
+        margin-bottom: 60px;
+        font-size: 20px;
+        vertical-align: middle;
     }
     .price_midle_txt {
         margin-top: 15px;
         margin-bottom: 20px;
         margin-left: 17px;
     }
+
+
+    .price_midle_txt h6 {
+        font-size: 13px;
+    }
+    .price_midle_txt h5 {
+        font-size: 13px;
+    }
+    .price_midle_txt h5 span {
+        font-size: 13px;
+    }
+    .sold_qty {
+        margin-bottom : 10%
+    }
+    .sticky_text {
+        font-size: 2.5vw;   
+    }
+
+
+
     .product_pick_wrap .media {
         padding: 12px;
     }
@@ -104,11 +126,12 @@
         padding-right: 0;
     }
     .faq_txt_wrap .card button i {
-        width: 41px;
+        /* width: 41px; */
     }
     .faq_txt_wrap .card button h6 {
         font-size: 15px;
         line-height: 22px;
+        width: 90%;
     }
     .sign_up_lft_wrap {
         padding-top: 150px;
@@ -224,7 +247,7 @@
         /* background-size: 15px 5px; */
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
         /* background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ; */
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='%23266C5E' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
         /* background-repeat: no-repeat; */
         /* animation: move 15s linear infinite; */
@@ -236,7 +259,7 @@
     .nutriniotn_head_2 b:before{
         position: absolute;
         content: "";
-        left: 61%;
+        left: 64%;
         bottom: 40px;
         width: 100px;
         height: 40px;
@@ -244,7 +267,7 @@
         /* background-size: 15px 5px; */
         /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
         /* background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ; */
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='%23266C5E' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
         /* background-repeat: no-repeat; */
         /* animation: move 15s linear infinite; */
@@ -271,6 +294,73 @@
             background-position: 500px 19px;
           }
         }
+        .nutrition_feat_box {
+            padding: 6px;
+            display: inline-block;
+            width: 85%;
+        }
+        .nutrition_feat_box .media img {
+            margin-right: 10px;
+            width: 50px;
+        }
+        .nutrition_feat_box .media h6{
+            font-size: 16px;
+            margin-bottom: 0px;
+            line-height: 21px;
+        }
+        .nutrition_feat_box .media {
+            align-items: center;
+        }
+        .nutrition_feat_box .media p{
+            font-size: 12px;
+            line-height: 17px;
+        }
+        .placed_img {
+            display: none;
+            height: 0;
+        }
+        .margin_btm{
+            margin-bottom: 15px;
+        }
+        .margin_btm_2{
+            margin-left: 15%;
+        }
+        .margin_btm_3{
+            display: none;
+        }
+        .nutrition_txt_wrap{
+            padding-top: 0;
+        }
+        .mb_5{
+            margin-bottom: 240px;
+        }
+
+        /*  */
+        #menu
+         {
+                position: absolute;
+                width: 180px;
+                height: 400px;
+                box-shadow: 0 0 10px #85888C;
+                margin: -50px 0 0 -50px;
+                padding: 50px;
+                padding-top: 125px;
+                background-color: #F5F6FA;
+                -webkit-font-smoothing: antialiased;
+                /* transform-origin: 0% 0%;
+                transform: translate(-100%, 0);
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); */
+                /* top: 73px !important; */
+                }
+
+                #menu li
+                {
+                padding: 10px 0;
+                transition-delay: 2s;
+                }
+
+
+
 
 }
 
@@ -286,6 +376,46 @@
         margin: 5px;
         width: 200px !important;
         height: 200px !important;
+    }
+    .nutrition_feat_box {
+        padding: 6px;
+        display: inline-block;
+        width: 85%;
+    }
+    .nutrition_feat_box .media img {
+        margin-right: 10px;
+        width: 50px;
+    }
+    .nutrition_feat_box .media h6{
+        font-size: 16px;
+        margin-bottom: 0px;
+        line-height: 21px;
+    }
+    .nutrition_feat_box .media {
+        align-items: center;
+    }
+    .nutrition_feat_box .media p{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .placed_img {
+        display: none;
+        height: 0;
+    }
+    .margin_btm{
+        margin-bottom: 15px;
+    }
+    .margin_btm_2{
+        margin-left: 15%;
+    }
+    .margin_btm_3{
+        display: none;
+    }
+    .nutrition_txt_wrap{
+        padding-top: 0;
+    }
+    .mb_5{
+        margin-bottom: 240px;
     }
     
 }

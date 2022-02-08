@@ -265,7 +265,8 @@ img{
     margin-left: 50px;
 }
 .nutrition_txt_wrap{
-    background-image: url(../images/glow_grow.png);
+    background-image: url(../images/glow_grow.png); 
+    /* glow_grow.png  Rotationanimation.gif*/
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -696,7 +697,7 @@ img{
     opacity: 0.75;
 }
 .product_feat_wrap ul li p img{
-    width: 25px;
+    width: 66px; 
 }
 .sidebar_img a{
     padding: 0px!important;
@@ -1222,7 +1223,7 @@ img{
     /* background-size: 15px 5px; */
     /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
     /* background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ; */
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='%23266C5E' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
     /* background-repeat: no-repeat; */
     /* animation: move 15s linear infinite; */
@@ -1243,7 +1244,7 @@ img{
     /* background-size: 15px 5px; */
     /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
     /* background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ; */
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='%23266C5E' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
     /* background-repeat: no-repeat; */
     /* animation: move 15s linear infinite; */
@@ -1265,7 +1266,7 @@ img{
     /* background-size: 15px 5px; */
     /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
     /* background: url("https://ewebdesign.com/wp-content/themes/ewebdesign/assets/img/wave.svg")  ; */
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='%23266C5E' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
     /* background-repeat: no-repeat; */
     /* animation: move 15s linear infinite; */
@@ -1283,7 +1284,7 @@ img{
     width: 100px;
     height: 40px;
     background-color: #000;
-    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='blue' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift 1s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='%23266C5E' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E")  ;
 
     /* background-size: 15px 5px; */
     /* background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/wave.svg') repeat-x 0%; */
@@ -1386,3 +1387,29 @@ img{
 ::-webkit-scrollbar-thumb {
     background: #FF0000 !important;
 }
+
+.youtube_vdo_embaded {
+    text-align: center !important;
+}
+
+#dropdownMenu2 {
+    vertical-align: bottom;
+    margin-top: 14px;
+}
+.MuiPaper-root .MuiPaper-elevation .MuiPaper-elevation16 .MuiDrawer-paper
+{
+    z-index: 9999999999999999999999 !important;
+    background-color: red !important;
+}
+
+.MuiPaper-root .MuiPaper-elevation .MuiPaper-elevation16 .MuiDrawer-paper .MuiDrawer-paperAnchorRight .css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+    z-index: 9999999999999999999999 !important;
+    background-color: red !important;
+
+
+}
+
+/* .MuiBox-root .css-1hskriy{
+    z-index: 9999999999999999999999 !important;
+background-color: #00B61F !important;
+} */

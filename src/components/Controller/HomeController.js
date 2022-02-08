@@ -11,6 +11,8 @@ function HomeController() {
     const [quantity, setQuantity] = useState(1);
     const [varientId, setVarientId] = useState();
     const [instagramPost, setInstagramPost] = useState([]);
+    // const [mobileMenu, setMobileMenu] = useState(false);
+
 
     function getCookie(cname) {
         let name = cname + "=";
@@ -30,6 +32,9 @@ function HomeController() {
 
     useEffect(() => {
         (async () => {
+
+            
+
             setLoading(true)
             const productList = await productApi.getProduct();
             if (productList && productList[0]) {
@@ -159,7 +164,14 @@ function HomeController() {
         <>
             {/* {console.log(instagramPost)} */}
             <Loader loading={loading} />
-            <Home product={product} handelOnClickBuyNow={handelOnClickBuyNow} quantity={quantity} setQuantity={setQuantity} varientId={varientId} setVarientId={setVarientId} instagramPost={instagramPost} />
+            <Home
+                product={product}
+                handelOnClickBuyNow={handelOnClickBuyNow}
+                quantity={quantity} setQuantity={setQuantity}
+                varientId={varientId} setVarientId={setVarientId}
+                instagramPost={instagramPost}
+           
+            />
         </>
     )
 

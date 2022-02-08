@@ -1231,3 +1231,8 @@ img{
 ::-webkit-scrollbar-thumb {
     background: #FF0000 !important;
 }
+
+
+.youtube_vdo_embaded {
+    text-align: center !important;
+}

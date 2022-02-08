@@ -61,10 +61,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="card">
+                                        {/* <div className="card">
                                             <div className="card-header" id="headingFour">
                                                 <h2 className="mb-0">
-                                                    <button type="button" className="btn collapsed" data-toggle="collapse" data-target="#collapseFour"><span> <h6> Do I need to consult a doctor before using Glow x Grow?</h6>
+                                                    <button type="button" className="btn collapsed" data-toggle="collapse" data-target="#collapseFour"><span> <h6>Do I need to consult a doctor before using Glow x Grow?</h6>
                                                         <i className="fa fa-plus"></i>
                                                     </span></button>
                                                 </h2>
@@ -74,7 +74,7 @@
                                                     <p>Glow x Grow is made out of real ingredients that are safe to consume. So a doctor consultation is not required</p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="card">
                                             <div className="card-header" id="headingFive">
                                                 <h2 className="mb-0">
@@ -85,7 +85,8 @@
                                             </div>
                                             <div id="collapseFive" className="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
                                                 <div className="card-body">
-                                                    <p>Claims List:<br/>
+                                                    <p>For us every query of the Dr. Su Fam is important. E-mail us your queries at  hello@drsu.in and we will be happy to help you out.</p>
+                                                    {/* <p>Claims List:<br/>
 
                                                     1.  Ayush<br/>
                                                     2.  Doctor developed<br/>
@@ -99,7 +100,7 @@
                                                     10. Non GMO<br/>
                                                     11. 100% Veg/Vegetarian<br/>
                                                     12. Clinically proven<br/>
-                                                    </p>
+                                                    </p> */}
                                                 </div>
                                             </div>
                                         </div>
