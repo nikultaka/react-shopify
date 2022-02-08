@@ -8,6 +8,7 @@ const Product = (props) => {
   const [checkedVal, setCheckedVal] = useState(0);
   const [varientPrice, setVarientPrice] = useState(0);
   const [soldVal, setSoldVal] = useState(localStorage.getItem('soldItems') ? localStorage.getItem('soldItems') : randomNumber(50, 100));
+  const [selectedSlide, setSelectedSlide] = useState(0);
 
   // const [varientId, setVarientId] = useState();
   let quantity = props.quantity
@@ -110,7 +111,7 @@ const Product = (props) => {
                 {product && product.images?.length > 0 &&
                   product.images.map((img, key2) => {
                     return (
-                      <div key={key2} className={key2 == 0 ? "tab-pane fade show active p-2 mr-2 ml-2" : "tab-pane fade show p-2 mr-2 ml-2"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
+                      <div key={key2} className={key2 == 0 ? "tab-pane fade show active p-2 mr-2 ml-2" : "tab-pane fade show  p-2 mr-2 ml-2"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
                       <img src={img.src} alt="a" className="img-fluid" />
                     </div>
                     )
@@ -124,7 +125,7 @@ const Product = (props) => {
                 {product && product.images?.length > 0 &&
                   product.images.map((img, key1) => {
                     return (
-                      <a className="nav-link mr-5" key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true">
+                      <a className={selectedSlide == key1 ? "nav-link mr-5 " : "nav-link mr-5"} key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true" onClick={()=>setSelectedSlide(key1)}>
                         <img src={img.src} alt="a" className="img-fluid mr-5" />
                       </a>
                     )
