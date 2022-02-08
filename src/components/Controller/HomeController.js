@@ -11,6 +11,8 @@ function HomeController() {
     const [quantity, setQuantity] = useState(1);
     const [varientId, setVarientId] = useState();
     const [instagramPost, setInstagramPost] = useState([]);
+    // const [mobileMenu, setMobileMenu] = useState(false);
+
 
     function getCookie(cname) {
         let name = cname + "=";
@@ -53,7 +55,7 @@ function HomeController() {
             //     setLoading(false)
             //     ToastAlert({ msg: instagramRecentPostId.error.error_user_msg, msgType: 'error' });
             // }
-            var getCookieVal = getCookie('count'); 
+            var getCookieVal = getCookie('count');
             if (getCookieVal == '' && getCookieVal != 1) {
                 var expire = new Date();
                 expire.setFullYear(now.getFullYear());
@@ -79,9 +81,9 @@ function HomeController() {
         if (instagramRecentPostId && instagramRecentPostId.status == 200) {
             var data = '';
             /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
-            data = instagramRecentPostId.data.data.slice(0, 8)
-            :
-            data = instagramRecentPostId.data.data
+                data = instagramRecentPostId.data.data.slice(0, 8)
+                :
+                data = instagramRecentPostId.data.data
             if (data.length > 0) {
                 await Promise.all(data.map(async (postId) => {
                     const instagramRecentPostData = await productApi.getInstagramRecentPostData(postId.id);
@@ -127,7 +129,14 @@ function HomeController() {
         <>
             {/* {console.log(instagramPost)} */}
             <Loader loading={loading} />
-            <Home product={product} handelOnClickBuyNow={handelOnClickBuyNow} quantity={quantity} setQuantity={setQuantity} varientId={varientId} setVarientId={setVarientId} instagramPost={instagramPost} />
+            <Home
+                product={product}
+                handelOnClickBuyNow={handelOnClickBuyNow}
+                quantity={quantity} setQuantity={setQuantity}
+                varientId={varientId} setVarientId={setVarientId}
+                instagramPost={instagramPost}
+           
+            />
         </>
     )
 

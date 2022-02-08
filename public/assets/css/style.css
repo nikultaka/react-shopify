@@ -1396,3 +1396,20 @@ img{
     vertical-align: bottom;
     margin-top: 14px;
 }
+.MuiPaper-root .MuiPaper-elevation .MuiPaper-elevation16 .MuiDrawer-paper
+{
+    z-index: 9999999999999999999999 !important;
+    background-color: red !important;
+}
+
+.MuiPaper-root .MuiPaper-elevation .MuiPaper-elevation16 .MuiDrawer-paper .MuiDrawer-paperAnchorRight .css-1160xiw-MuiPaper-root-MuiDrawer-paper{
+    z-index: 9999999999999999999999 !important;
+    background-color: red !important;
+
+
+}
+
+/* .MuiBox-root .css-1hskriy{
+    z-index: 9999999999999999999999 !important;
+background-color: #00B61F !important;
+} */
