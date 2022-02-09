@@ -40,9 +40,9 @@ const MobileStickey = (props) => {
                 </div>
                 <div className="d-flex align-items-center">
                     <div className="quantity">
-                        <i className="fa fa-minus quantity__minus" onClick={() => minusValue(quantity)}></i>
+                        <i className="fa fa-minus quantity__minus" style={{ cursor : 'pointer' }} onClick={() => minusValue(quantity)}></i>
                         <input name="quantity" type="text" readOnly className="quantity__input" value={quantity} />
-                        <i className="fa fa-plus quantity__plus" onClick={() => plusValue(quantity)}></i>
+                        <i className="fa fa-plus quantity__plus" style={{ cursor : 'pointer' }} onClick={() => plusValue(quantity)}></i>
                     </div>
                     <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)}>BUY NOW</a>
                 </div>

@@ -57,7 +57,7 @@ function HomeController() {
             //     setLoading(false)
             //     ToastAlert({ msg: instagramRecentPostId.error.error_user_msg, msgType: 'error' });
             // }
-
+            setLoading(false)  
             var getCookieVal = getCookie('count');
             if (getCookieVal == '' && getCookieVal != 1) {
                 // var expire = new Date();
@@ -90,7 +90,7 @@ function HomeController() {
                         })
                 }))
             }
-            setLoading(false)
+            
 
         })();
     }, []);

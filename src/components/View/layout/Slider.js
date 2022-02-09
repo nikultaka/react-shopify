@@ -4,7 +4,7 @@ const Slider = () =>{
         <section className="slider_section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-10">
+            <div className="col-lg-10">   
               <a href="#" className="slidPrv_1">
                 <img src={helper.ImagePath+"arrw_lft.svg"} alt="a" className="img-fluid"/>
               </a>
