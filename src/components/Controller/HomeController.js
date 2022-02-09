@@ -33,7 +33,7 @@ function HomeController() {
     useEffect(() => {
         (async () => {
 
-            
+
 
             setLoading(true)
             const productList = await productApi.getProduct();
@@ -75,23 +75,21 @@ function HomeController() {
                 var instagramPostArray = JSON.parse(localStorage.getItem('instagramRecentPostData'));
                 // console.log('instagramPostArray');
                 // Object.values(instagramPostArray).map((instagramPost) => {
-                    // var mapCount = 0
-                    
-                        await Promise.all(instagramPostArray.map(async (instagramPost, t) => {
-                            // console.log(instagramPost.data.media_url);
-                            // await checkUrlExpiredOrNot(instagramPost.data.media_url);
-                            await checkUrlExpiredOrNot("https://scontent.cdninstagram.com/v/t51.2885-15/96225438_154623232742454_973649221027714195_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=BAdpAPwYTKEAX_3M56o&_nc_ht=scontent.cdninstagram.com&edm=ANQ71j8EAAAA&oh=00_AT9Ukl4gFwkl9SZzH1ViU736MMBBWBxsXXnaD_KS07p2jw&oe=620043F8",
-                                function () {
-                                    // alert("good")
-                                }, async function () {
-                                    await getInstagramRecentPost()
-                                });
-                            // console.log(checkUrlExpiredOrNot);
-        
-                        }))
-            
-            }
+                var mapCount = 0
 
+                await Promise.all(instagramPostArray.map(async (instagramPost, t) => {
+                    // console.log(instagramPost.data.media_url);
+                    // await checkUrlExpiredOrNot(instagramPost.data.media_url);
+                    await checkUrlExpiredOrNot(instagramPost.data.media_url,
+                        function () {
+                        }, async function () {
+                            mapCount++;
+                            if (mapCount == 1) {
+                                await getInstagramRecentPost()
+                            }
+                        })
+                }))
+            }
             setLoading(false)
 
         })();
@@ -106,7 +104,7 @@ function HomeController() {
     }
 
     async function getInstagramRecentPost() {
-        // alert("insta call")
+        
         setLoading(true)
         var instagramPost2 = [];
         const instagramRecentPostId = await productApi.getInstagramRecentPostId();
@@ -116,19 +114,25 @@ function HomeController() {
             //     data = instagramRecentPostId.data.data.slice(0, 8)
             //     :
             //     data = instagramRecentPostId.data.data 
-            var data = instagramRecentPostId.data.data.slice(0, 8)
+            var instaData = instagramRecentPostId.data.data.slice(0, 8)
             // console.log(data);
             // return false;
-            if (data.length > 0) {
-                await Promise.all(data.map(async (postId, t) => {
-                    const instagramRecentPostData = await productApi.getInstagramRecentPostData(postId.id);
-                    if ((instagramRecentPostData) && instagramRecentPostData != '') {
-                        instagramPost2.push(instagramRecentPostData)
-                        var array = JSON.stringify(instagramPost2);
-                        localStorage.removeItem('instagramRecentPostData')
-                        localStorage.setItem('instagramRecentPostData', array)
-                    }
-                }))
+            if (instaData.length > 0) {
+                // console.log(data)     
+                // i = 0;
+                // console.log(instaData)    
+
+                await Promise.all(
+                    instaData.slice(0, 8).map(async (postId, t) => {
+                        const instagramRecentPostData = await productApi.getInstagramRecentPostData(postId.id);
+                        if ((instagramRecentPostData) && instagramRecentPostData != '') {
+                            instagramPost2.push(instagramRecentPostData)
+                            var array = JSON.stringify(instagramPost2);
+                            localStorage.removeItem('instagramRecentPostData')
+                            localStorage.setItem('instagramRecentPostData', array)
+                        }
+                    })
+                )
             }
         } else {
             setLoading(false)
@@ -170,7 +174,7 @@ function HomeController() {
                 quantity={quantity} setQuantity={setQuantity}
                 varientId={varientId} setVarientId={setVarientId}
                 instagramPost={instagramPost}
-           
+
             />
         </>
     )
