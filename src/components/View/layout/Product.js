@@ -433,7 +433,7 @@ const Product = (props) => {
   }
   const settings = {
     dots: true,
-    arrows: true,
+    arrows: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? false : true,
     speed: 500,
     slidesToShow: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? 1 : 3,
     slidesToScroll: 1,
@@ -461,8 +461,8 @@ const Product = (props) => {
                 {product && product.images?.length > 0 &&
                   product.images.map((img, key2) => {
                     return (
-                      <div key={key2} className={key2 == 0 ? "tab-pane fade show active p-2 mr-2 ml-2" : "tab-pane fade show  p-2 mr-2 ml-2"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
-                      <img src={img.src} alt="a" className="img-fluid" />
+                      <div key={key2} className={key2 == 0 ? "tab-pane fade show active" : "tab-pane fade show"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
+                      <img src={img.src} alt="a" className="img-fluid" style={{ borderRadius : '10px' }} />
                     </div>
                     )
                   })

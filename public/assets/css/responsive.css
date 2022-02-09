@@ -105,11 +105,11 @@
     }
     .slidPrv_1 {
         left: 0;
-        display: none;
+        display: none !important;
     }
     .slidNext_1 {
         right: 0;
-        display: none;
+        display: none  !important;
     }
     .overall_rating_wrap {
         margin-bottom: 25px;
