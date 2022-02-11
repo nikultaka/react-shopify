@@ -52,13 +52,13 @@ const MobileMenu = (props) =>{
           </List>
           <Divider /> */}
           <List>
-            {['Shop', 'About', 'Reviews'].map((text, index) => (
+            {['SHOP', 'ABOUT', 'REVIEWS'].map((text, index) => (
               <ListItem>
                 <ListItemIcon>
-                    {text == 'Shop' ?  <AddBusinessIcon /> : text == 'About' ? <InfoIcon/> :text == 'Reviews' ?<ReviewsIcon/>:"" }
+                    {text == 'SHOP' ?  <AddBusinessIcon /> : text == 'ABOUT' ? <InfoIcon/> :text == 'REVIEWS' ?<ReviewsIcon/>:"" }
                   {/* {index % 1 !== 0 ? <AddBusinessIcon /> : <MailIcon />} */}
                 </ListItemIcon>
-              <a href={text == 'Shop' ? "#product_buy_sec" :text == 'About' ? "#aboutus_section":text == 'Reviews' ? "#reviews_section":""}><ListItemText primary={text} /></a>
+              <a href={text == 'SHOP' ? "#product_buy_sec" :text == 'ABOUT' ? "#aboutus_section":text == 'REVIEWS' ? "#reviews_section":""}><ListItemText primary={text} /></a>
               </ListItem>
          ))}
           </List>

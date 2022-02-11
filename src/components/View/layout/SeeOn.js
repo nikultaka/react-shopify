@@ -1,6 +1,6 @@
 const SeeOn = () =>{
     return(
-        <section className="see_on">
+        <section className="see_on" style={{ display : 'none' }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-4">

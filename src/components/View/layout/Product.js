@@ -571,7 +571,7 @@ const Product = (props) => {
                     product.variants.map((variant, key3) => {
 
                       return (
-                        <div className="col-6" key={key3}>
+                        <div className="col-12" key={key3}>
                           <div className={checkedVal == key3 ? 'active_variant media' : "media"} style={{ position: 'relative' }}>
                             <input type='radio' className="product_v" id={key3} name="v" style={product_v} onClick={() => handelOnchangeVarient(key3, variant.price, variant.id)} checked={checkedVal === key3} />
                             <img src={helper.ImagePath + "pack_1.png"} alt="a" className="img-fluid" />

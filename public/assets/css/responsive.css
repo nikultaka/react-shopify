@@ -45,13 +45,13 @@
         text-align: center;
         margin-bottom: 15px;
         margin-top: 28px;
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
         font-size: 20px;
         vertical-align: middle;
     }
     .price_midle_txt {
         margin-top: 15px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         margin-left: 17px;
     }
 
@@ -66,7 +66,7 @@
         font-size: 13px;
     }
     .sold_qty {
-        margin-bottom : 10%
+        /* margin-bottom : 10% */
     }
     .sticky_text {
         font-size: 2.5vw;   
@@ -557,3 +557,7 @@
         height: 230px !important;
     }
 } */
+
+.css-cveggr-MuiListItemIcon-root {
+    min-width: 35px !important;
+}

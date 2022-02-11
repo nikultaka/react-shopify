@@ -26,7 +26,7 @@ const WhyWe =() =>{
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Lorem ipsum dolor sit amet</td>
+                      <td>Complete Vitamins and Minerals Profile</td>
                       <td>
                         <span><i className="fa fa-check"></i></span>
                       </td>
@@ -35,42 +35,42 @@ const WhyWe =() =>{
                       <td></td>
                     </tr>
                     <tr>
-                      <td>consectetur adipiscing eli</td>
+                      <td>Boosted with Probiotics</td>
                       <td><span><i className="fa fa-check"></i></span></td>
                       <td>Rare</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Integer tellus ligula</td>
-                      <td><span><i className="fa fa-check"></i></span></td>
-                      <td></td>
                       <td></td>
                       <td>Rare</td>
                     </tr>
                     <tr>
-                      <td>malesuada sed turpis id</td>
+                      <td>Affordable Cost Per Serving</td>
                       <td><span><i className="fa fa-check"></i></span></td>
                       <td>Rare</td>
                       <td></td>
-                      <td></td>
+                      <td>Rare</td>
                     </tr>
                     <tr>
-                      <td>ullamcorper egestas velit</td>
+                      <td>No added Sugar/artificial flavours</td>
+                      <td><span><i className="fa fa-check"></i></span></td>
+                      <td>Rare</td>
+                      <td>Rare</td>
+                      <td>Rare</td>
+                    </tr>
+                    <tr>
+                      <td>Potency</td>
                       <td><span><i className="fa fa-check"></i></span></td>
                       <td>Rare</td>
                       <td></td>
-                      <td></td>
+                      <td>Rare</td>
                     </tr>
                     <tr>
-                      <td>Integer ac leo lacinia</td>
+                      <td>Taste</td>
                       <td><span><i className="fa fa-check"></i></span></td>
-                      <td></td>
+                      <td>Rare</td>
                       <td>Rare</td>
                       <td></td>
                     </tr>
                     <tr>
-                      <td>commodo tellus id</td>
+                      <td>Doctor Formulated</td>
                       <td><span><i className="fa fa-check"></i></span></td>
                       <td>Rare</td>
                       <td></td>
