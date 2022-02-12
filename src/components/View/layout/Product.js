@@ -544,7 +544,9 @@ const Product = (props) => {
           <div className="col-lg-6">
             <div className="product_buy_txt_wrap">
               <div className="review_txt_wrap">
-                <p><img src={helper.ImagePath + "5star.png"} alt="a" className="img-fluid" /> from 1611 Reviews</p>
+                <p><img src={helper.ImagePath + "5star.png"} alt="a" className="img-fluid" /> 
+                   <span className="review_title">from 1611 Reviews</span>
+                </p>
               </div>
               <div className="product_title_wrap">
                 <h3>{product ? product.title : ""}</h3>

@@ -24,17 +24,17 @@ const MobileStickey = (props) => {
                 <div className="row sticky_text">
                     <div className="col-4">
                         <div className="ftr_copy">
-                            Four Month Supply
+                            Limited time offer!
                         </div>
                     </div>
                     <div className="col-4">
                         <div className="ftr_copy">
-                            Save 38%
+                            Save ₹699
                         </div>
                     </div>
                     <div className="col-4">
                         <div className="ftr_copy">
-                            Free US Shipping
+                            Free Shipping
                         </div>
                     </div>
                 </div>

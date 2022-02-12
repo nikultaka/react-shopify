@@ -1,6 +1,6 @@
 const SignUp = () =>{
     return(
-        <section className="signup_section">
+        <section className="signup_section" style={{ display : 'none' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-5">

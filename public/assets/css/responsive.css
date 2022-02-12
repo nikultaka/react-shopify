@@ -1,6 +1,16 @@
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media(min-width: 320px) and (max-width: 575px) {
+
+    .why_we_table table tr td:nth-child(2) span{
+        padding: 45px 0px;
+    }
+    .why_we_table table tr th:nth-child(2) span{
+        padding: 36px 0px !important;
+    }
+    .nutrition_txt_wrap {
+        background-position: 50% 39%;
+    }
     .header_menu {
         display: none;
     }
@@ -418,6 +428,14 @@
     }
     .mb_5{
         margin-bottom: 240px;
+    }
+
+
+    .why_we_table table tr td:nth-child(2) span{
+        padding: 45px 0px;
+    }
+    .why_we_table table tr th:nth-child(2) span{
+        padding: 36px 0px !important;
     }
     
 }

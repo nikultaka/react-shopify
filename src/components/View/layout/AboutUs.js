@@ -3,6 +3,11 @@ const AboutUs = () => {
     <section className="aboutus_section" id="aboutus_section">
       <div className="container">
         <div className="row">
+          <div class="col-lg-12 text-center">
+            <h2>About Us</h2>
+          </div>              
+        </div>&nbsp;
+        <div className="row">
           <div className="col-lg-6">
             <div className="youtube_vdo_embaded">
               {/* <!-- enter your youtube video link here --> */}
@@ -17,7 +22,7 @@ const AboutUs = () => {
           </div>
           <div className="col-lg-6">
             <div className="youtube_vdo_embaded_txt">
-              <h3>About Us</h3>
+              {/* <h3>About Us</h3> */}
               <p>Dr. Su today is a brand synonymous for building ‘acne warriors’ across the globe, with a community of over half a million people. A page on instagram that started through the first lockdown to help people suffering from acne & other skin/hair related concerns has grown into a
                 PEOPLE’S BRAND that everyone trusts, adores and relies on for beautiful skin & hair.
                 .<br /><br />

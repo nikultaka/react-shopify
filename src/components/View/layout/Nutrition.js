@@ -119,7 +119,7 @@ const Nutrition = () => {
                 </div>
                 <div class="col-lg-6">
                   <div class="nutrition_lft_wrap ">
-                    <div class="nutrition_feat_box margin_btm margin_left margin_btm_3 ">
+                    <div class="nutrition_feat_box margin_btm margin_left margin_btm_3 " style={{ display : 'block' }}>
                       <div class="media">
                         <img src={helper.ImagePath + "Antioxidants-27.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">

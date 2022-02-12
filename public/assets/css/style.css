@@ -265,7 +265,7 @@ img{
     margin-left: 50px;
 }
 .nutrition_txt_wrap{
-    background-image: url(../images/glow_grow.png); 
+    background-image: url(../images/Redefine_Nutrition.png); 
     /* glow_grow.png  Rotationanimation.gif*/
     background-size: contain;
     background-repeat: no-repeat;
@@ -724,7 +724,7 @@ img{
 .product_title_wrap h3{
     font-style: normal;
     font-family: Satoshi-Bold;
-    font-size: 42px;
+    font-size: 24px;
     line-height: 110%;
     letter-spacing: -0.01em;
     color: #1C4649;
@@ -1413,3 +1413,7 @@ img{
     z-index: 9999999999999999999999 !important;
 background-color: #00B61F !important;
 } */
+
+.review_title {
+    font-size: 14px;
+}
