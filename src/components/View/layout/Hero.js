@@ -69,7 +69,7 @@ const Hero = (props) => {
                                 <li><a class="dropdown-item" href="#aboutus_section">About</a></li>
                                 <li><a class="dropdown-item" href="#reviews_section">Reviews</a></li>
                             </div> */}
-                            <i class="fa fa-bars fa-1" onClick={props.toggleDrawer('right', true)}></i>
+                            <i class="fa fa-bars fa-1"  style={{ paddingTop : '8px' }} onClick={props.toggleDrawer('right', true)}></i>
 
                         </a>
 
@@ -86,9 +86,9 @@ const Hero = (props) => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="hero_txt">
-                            <h6>Introducing Dr Su’s Glow x Grow</h6>
+                            {/* <h6>Introducing Dr Su’s Glow x Grow</h6> */}
                             <h1>The highest <br /> standards of <br />Nutrition.</h1>
-                            <p>Backed with Science,Powered by our Community.</p>
+                            <p className="backend_color">Backed with Science,<br />Powered by our Community.</p>
 
                             <div className="hero_bttn">
                                 <a href="#">BUY NOW</a>

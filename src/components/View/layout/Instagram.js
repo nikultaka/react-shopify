@@ -142,7 +142,7 @@ const Instagram = () => {
                     <div className="col-lg-4">
                         <div className="instagram_btn">
                             <h5>Follow us On Instagram</h5>
-                            <a href={helper.INSTAGRAM_USER_URL} target={'_blank'}><i className="fa fa-instagram"></i>  {helper.INSTAGRAM_USER_NAME}</a>
+                            {/* <a href={helper.INSTAGRAM_USER_URL} target={'_blank'}><i className="fa fa-instagram"></i>  {helper.INSTAGRAM_USER_NAME}</a> */}
                         </div>
                     </div>
                     {
@@ -150,7 +150,8 @@ const Instagram = () => {
 
                             <div className="col-lg-8">
                                 <div className="instagram_posts">
-                                    {instagramPostArray.slice(0, 4).map((postData, i) => {
+                                    <div data-mc-src="7eaf1ed7-3ad7-402d-933a-a1821ca45af3#instagram"></div>
+                                    {/* {instagramPostArray.slice(0, 4).map((postData, i) => {
                                         return (
                                             <>
                                                 <a href="#" key={i}>
@@ -158,9 +159,9 @@ const Instagram = () => {
                                                 </a>
                                             </>
                                         )
-                                    })}
+                                    })} */}
                                 </div>
-                                <div className="instagram_posts mt-2">
+                                {/* <div className="instagram_posts mt-2">
                                     {instagramPostArray.slice(4, 8).map((postData, i) => {
                                         return (
                                             <>
@@ -170,7 +171,7 @@ const Instagram = () => {
                                             </>
                                         )
                                     })}
-                                </div>
+                                </div> */}
                             </div>
                             // :
                             // <div className="col-lg-8">

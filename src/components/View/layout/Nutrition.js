@@ -103,9 +103,9 @@ const Nutrition = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="placed_img margin_btm">
+                    {/* <div class="placed_img margin_btm">
                       <img src={helper.ImagePath + "RedefineNutrition.png"} alt="a" className="img-fluid" style={{ backgroundColor: "#41a0e1", borderRadius: "12px" }} />
-                    </div>
+                    </div> */}
                     <div class="nutrition_feat_box margin_left_2">
                       <div class="media">
                         <img src={helper.ImagePath + "HighFiber.png"} alt="a" className="img-fluid" style={imgStyle} />
@@ -118,7 +118,7 @@ const Nutrition = () => {
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="nutrition_lft_wrap ">
+                  <div class="nutrition_lft_wrap left_padding">
                     <div class="nutrition_feat_box margin_btm margin_left margin_btm_3 " style={{ display : 'block' }}>
                       <div class="media">
                         <img src={helper.ImagePath + "Antioxidants-27.png"} alt="a" className="img-fluid" style={imgStyle} />
@@ -135,7 +135,7 @@ const Nutrition = () => {
                       <div class="media">
                         <img src={helper.ImagePath + "PROBIOTICS.png"} alt="a" className="img-fluid" style={imgStyle} />
                         <div class="media-body">
-                          <h6>ProBiotics</h6>
+                          <h6>Probiotics</h6>
                           <p>Healthy Gut → Healthy Brain → Healthy Skin → Healthy Hair → Happy You.
                             Power packed with probiotics, GxG is the first step to a happier you.</p>
                         </div>

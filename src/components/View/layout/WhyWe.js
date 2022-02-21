@@ -19,9 +19,9 @@ const WhyWe =() =>{
                     <tr>
                       <th width="20%"></th>
                       <th width="20%"><span><img src={helper.ImagePath+"logo.svg"} alt="a" className="img-fluid"/></span></th>
-                      <th style={{ fontSize: "2vw" }}>POWDER</th>
-                      <th style={{ fontSize: "2vw" }}>TABLET</th>
-                      <th style={{ fontSize: "2vw" }}>HEALTH DRINKS</th>
+                      <th style={{ fontSize: "1.5vw" }}>OTHER BLENDS</th>
+                      <th style={{ fontSize: "1.5vw" }}>TABLETS</th>
+                      <th style={{ fontSize: "1.5vw" }}>HEALTH DRINKS</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -30,22 +30,22 @@ const WhyWe =() =>{
                       <td>
                         <span><i className="fa fa-check"></i></span>
                       </td>
+                      <td>Rare</td>
                       <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
+                      <td>Rare</td>
+                    </tr>  
                     <tr>
                       <td>Boosted with Probiotics</td>
                       <td><span><i className="fa fa-check"></i></span></td>
                       <td>Rare</td>
-                      <td></td>
                       <td>Rare</td>
-                    </tr>
+                      <td>Rare</td>
+                    </tr>    
                     <tr>
                       <td>Affordable Cost Per Serving</td>
                       <td><span><i className="fa fa-check"></i></span></td>
                       <td>Rare</td>
-                      <td></td>
+                      <td>Rare</td>
                       <td>Rare</td>
                     </tr>
                     <tr>

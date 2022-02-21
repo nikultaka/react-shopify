@@ -54,11 +54,12 @@ const MobileMenu = (props) =>{
           <List>
             {['SHOP', 'ABOUT', 'REVIEWS'].map((text, index) => (
               <ListItem>
-                <ListItemIcon>
+                {/* <ListItemIcon>
+                <a href={text == 'SHOP' ? "#product_buy_sec" :text == 'ABOUT' ? "#aboutus_section":text == 'REVIEWS' ? "#reviews_section":""}>
                     {text == 'SHOP' ?  <AddBusinessIcon /> : text == 'ABOUT' ? <InfoIcon/> :text == 'REVIEWS' ?<ReviewsIcon/>:"" }
-                  {/* {index % 1 !== 0 ? <AddBusinessIcon /> : <MailIcon />} */}
-                </ListItemIcon>
-              <a href={text == 'SHOP' ? "#product_buy_sec" :text == 'ABOUT' ? "#aboutus_section":text == 'REVIEWS' ? "#reviews_section":""}><ListItemText primary={text} /></a>
+                </a>  
+                </ListItemIcon> */}
+              <a href={text == 'SHOP' ? "#product_buy_sec" :text == 'ABOUT' ? "#aboutus_section":text == 'REVIEWS' ? "#reviews_section":""} style={{ width : '100%' }}><ListItemText primary={text} /></a>
               </ListItem>
          ))}
           </List>

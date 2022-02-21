@@ -2,14 +2,34 @@
 
 @media(min-width: 320px) and (max-width: 575px) {
 
+    .left_padding  {
+        padding-left: 27px !important;
+    }
+
+    .why_we_table th {
+        font-size: 2.2vw !important;
+    }    
+
+    .our_reviews p::before { 
+        left: 50%;
+        width: 172px;
+    }
+
     .why_we_table table tr td:nth-child(2) span{
         padding: 45px 0px;
     }
     .why_we_table table tr th:nth-child(2) span{
         padding: 36px 0px !important;
     }
+    .last_one {
+        font-size: 12px !important;
+    }
+    .instagram_post_sec{
+        padding: 6px 0px;
+    }
     .nutrition_txt_wrap {
         background-position: 50% 39%;
+        background-image: url(../images/Rotationanimation.gif);
     }
     .header_menu {
         display: none;
@@ -144,6 +164,7 @@
         font-size: 15px;
         line-height: 22px;
         width: 90%;
+        text-align: left;
     }
     .sign_up_lft_wrap {
         padding-top: 150px;

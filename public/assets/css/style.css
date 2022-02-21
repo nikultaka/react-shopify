@@ -269,7 +269,8 @@ img{
     /* glow_grow.png  Rotationanimation.gif*/
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    /* background-position: center center; */
+    background-position: 71% 50%;
     padding-top: 50px;
 }
 /* nutrition css end */
@@ -329,7 +330,7 @@ img{
     padding: 25px 0px;
 }
 .why_we_table table tr th:nth-child(2) span img{
-    width: 150px;
+    width: 168px;
 }
 .why_we_table table tr i{
     font-size: 20px;
@@ -355,6 +356,7 @@ img{
 .faq_section,
 .aboutus_section{
     background: linear-gradient(180deg, #EFFFF7 0%, #FFFFFF 39.69%, #EFFFF7 100%);
+    /* padding: 60px 0px; */
     padding: 60px 0px;
 }
 .youtube_vdo_embaded_txt h3{
@@ -441,7 +443,8 @@ img{
     background: #e7f6f3 !important;
 } */
 .faq_section{
-    padding: 90px 0px;
+    /* padding: 90px 0px; */
+    padding: 8px 0px;
 }
 .card.show{
     border-color: #3EB49C!important;
@@ -589,6 +592,7 @@ img{
 
 .instagram_post_sec{
     background: linear-gradient(180deg, #EFFFF7 0%, #FFFFFF 39.69%, #EFFFF7 100%);
+    /* padding: 60px 0px; */
     padding: 60px 0px;
 }
 .instagram_btn{
@@ -1260,7 +1264,7 @@ img{
     content: "";
     left: 50%;
     bottom: -10px;
-    width: 368px;
+    width: 200px;
     height: 40px;
     background-color: #000;
     /* background-size: 15px 5px; */
@@ -1333,6 +1337,7 @@ img{
 } */
 .active_variant.media {
     background: #3eb49c42;
+    margin-top: 10px;
 }
 
   .loader {
@@ -1417,3 +1422,31 @@ background-color: #00B61F !important;
 .review_title {
     font-size: 14px;
 }
+
+.backend_color {
+    color: #FFFFFF !important;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.gxg_cup {
+    width: 20%;
+}
+
+.active_variant {
+    background : rgba(62, 180, 156, 0.1) !important;
+}
+
+.slick-track {
+    height:  unset !important;
+}
+
+.youtube_vdo_embaded_txt {
+    height: 300px;
+    max-height: 300px !important;
+    overflow-y: auto;
+}
+
+br{
+    display:block !important;
+ }

@@ -33,13 +33,16 @@ const Slider = () =>{
                   </a>
                   <div className="vdo_sliders">
                     <a href="#">
-                      <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/>
+                      {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
+                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </a>
                     <a href="#">
-                      <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/>
+                      {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
+                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </a>
                     <a href="#">
-                      <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/>
+                      {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
+                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </a>
                   </div>
                 </div>

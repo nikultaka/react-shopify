@@ -516,8 +516,9 @@ const Product = (props) => {
               </div>
 
             </div>
-            <div className="product_feat_wrap">
-              <ul>
+            <div className="product_feat_wrap mt-4">
+              <img src={helper.ImagePath + "add_subheading.png"} alt="a" className="img-fluid" />
+              {/* <ul>
                 <li>
                   <p> <img src={helper.ImagePath + "111+BENEFITS-12.png"} alt="a" className="img-fluid" /></p>
                 </li>
@@ -538,7 +539,7 @@ const Product = (props) => {
                 <li>
                   <p> <img src={helper.ImagePath + "Vegetarian.png"} alt="a" className="img-fluid" /></p>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
           <div className="col-lg-6">
@@ -554,20 +555,26 @@ const Product = (props) => {
               <div className="price_box_wrap">
                 <h4>₹{varientPrice}</h4>
                 <div className="price_midle_txt">
-                  <p>MRP <span>₹1499</span></p>
+                  <p>MRP <span>₹1998</span></p>
                   <h5>You Save <span>₹699</span></h5>
                   <h6>Inclusive of all Taxes.</h6>
                 </div>
                 <div className="media sold_qty">
-                  <img src={helper.ImagePath + "amp.png"} alt="a" className="img-fluid" />
+                  {
+                    (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent)) ?
+                      <img src={helper.ImagePath + "amp.png"} alt="a" style={{ width:'20px' }} className="img-fluid" />
+                    :
+                    <img src={helper.ImagePath + "amp.png"} alt="a" className="img-fluid" />
+                  }
+                  
                   <div className="media-body">
                     <h6>{soldVal} Sold</h6>
-                    <p>in the last 1 hour</p>
+                    <p className="last_one">in the last 1 hour</p>
                   </div>
                 </div>
               </div>
               <div className="product_pick_wrap">
-                <h5>In a dolor sed velit semper finibus. Praesent consectetur.</h5>
+                {/* <h5>In a dolor sed velit semper finibus. Praesent consectetur.</h5> */}
                 <div className="row">
                   {product && product.variants?.length > 0 &&
                     product.variants.map((variant, key3) => {
@@ -576,11 +583,11 @@ const Product = (props) => {
                         <div className="col-12" key={key3}>
                           <div className={checkedVal == key3 ? 'active_variant media' : "media"} style={{ position: 'relative' }}>
                             <input type='radio' className="product_v" id={key3} name="v" style={product_v} onClick={() => handelOnchangeVarient(key3, variant.price, variant.id)} checked={checkedVal === key3} />
-                            <img src={helper.ImagePath + "pack_1.png"} alt="a" className="img-fluid" />
-                            <img src={helper.ImagePath + "pack_2.png"} alt="a" className="img-fluid mt_3" />
+                            <img src={helper.ImagePath + "gxg_cup.png"} alt="a" className="img-fluid gxg_cup" />
+                            {/* <img src={helper.ImagePath + "pack_2.png"} alt="a" className="img-fluid mt_3" /> */}
                             <div className="media-body">
                               <h6>{variant.title}</h6>
-                              <p>210gm x2</p>
+                              {/* <p>210gm</p> */}
                             </div>
                           </div>
                         </div>
@@ -652,7 +659,7 @@ const Product = (props) => {
                         Step 1 : Pour one sachet of Glow x Grow into 200 ml of water or your favorite drink.<br />
                         Step 2 : Stir/ blend until fully dissolved.<br />
                         Step 3 : Enjoy your drink and keep Glowing and Growing!.<br />
-                        <b>Consume one sachet daily at any time. Best results when taken in the morning on an empty stomach. </b><br />
+                        Consume one sachet daily at any time. Best results when taken in the morning on an empty stomach.<br />
                         Recommended Dosage :1 serving per day or as suggested by healthcare professionals.<br />
                         Tastes Like : Lemon and Mint. So refreshing, there’s nothing quite like it!
 
