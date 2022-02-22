@@ -32,8 +32,8 @@ let helper = {
 if (Mode == "Production") {
 
     helper = {
-        BASE_URL: "https://drsu.flamecloud.co.uk/",
-        ImagePath: "https://drsu.flamecloud.co.uk/assets/images/",
+        BASE_URL: "http://64.227.189.11/",
+        ImagePath: "http://64.227.189.11/assets/images/",
         APIKEY: "cd4134a5fa27fad34663d5e1bf65df0b",
         APIPASSWORD: "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",
         STORENAME: "nikuls-store",
