@@ -208,8 +208,9 @@ const Instagram = () => {
                                 </div>
                                 <div className="col-lg-7">
                                     <div className="get_rgt">
-                                        <input type="text" placeholder="Your Email" className="form-control" />
-                                        <i className="fa fa-angle-right"></i>
+                                        {/* <input type="text" placeholder="Your Email" className="form-control" /> */}
+                                        <div class="klaviyo-form-Y2QSgt"></div>
+                                        {/* <i className="fa fa-angle-right"></i> */}
                                     </div>
                                 </div>
                             </div>

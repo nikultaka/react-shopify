@@ -85,9 +85,20 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
+                {
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?                
+                    <div className="row">
+                        <div className="col-lg-12 mt-5">
+                            &nbsp;
+                        </div>
+                    </div>
+                    :
+                    ''
+                }
             </div>
 
-            
+            {/* <div class="klaviyo-form-Y2QSgt"></div> */}
         </footer>
     )
 

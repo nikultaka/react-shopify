@@ -1167,8 +1167,10 @@ img{
 
 .brdr_top{
     border-top: 1px solid #fff;
-    padding-top: 15px;
-    margin-top: 25px;
+    /* padding-top: 15px;
+    margin-top: 25px; */
+    padding-top: 10px;
+    margin-top: 15px;
 }
 
 .paoyment_method{
@@ -1451,11 +1453,11 @@ br{
     display:block !important;
  }
 
- .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+ .MuiDrawer-paperAnchorRight {
     background-color : #3ab09c !important;
     color: white !important;
     font-weight: bold !important;
-}
+}   
 .MuiTypography-root {
     color: white !important;
     font-weight: bold !important;

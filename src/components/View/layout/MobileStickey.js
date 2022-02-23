@@ -27,12 +27,12 @@ const MobileStickey = (props) => {
                             Limited time offer!
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-3">
                         <div className="ftr_copy">
                             Save ₹699
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-3">
                         <div className="ftr_copy">
                             Free Shipping
                         </div>

@@ -19,9 +19,9 @@ const WhyWe =() =>{
                     <tr>
                       <th width="20%"></th>
                       <th width="20%"><span><img src={helper.ImagePath+"logo.svg"} alt="a" className="img-fluid"/></span></th>
-                      <th style={{ fontSize: "1.5vw" }}>OTHER BLENDS</th>
-                      <th style={{ fontSize: "1.5vw" }}>TABLETS</th>
-                      <th style={{ fontSize: "1.5vw" }}>HEALTH DRINKS</th>
+                      <th style={{ fontSize: "2vw" }}>OTHER <br /> BLENDS</th>
+                      <th style={{ fontSize: "2vw" }}>TABLETS</th>
+                      <th style={{ fontSize: "2vw" }}>HEALTH <br/> DRINKS</th>
                     </tr>
                   </thead>
                   <tbody>
