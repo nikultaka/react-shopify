@@ -835,7 +835,7 @@ img{
 .product_buy_count_wrap .quantity {
     border: 2px solid rgba(0, 0, 0, 0.25);
     border-radius: 5.05572px;
-    padding: 9px 25px;
+    padding: 9px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1450,3 +1450,19 @@ background-color: #00B61F !important;
 br{
     display:block !important;
  }
+
+ .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    background-color : #3ab09c !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.MuiTypography-root {
+    color: white !important;
+    font-weight: bold !important;
+}
+.MuiListItem-root {
+    border-bottom : 1px solid black !important
+}
+.css-1hskriy {
+    margin-left: 20px;
+}

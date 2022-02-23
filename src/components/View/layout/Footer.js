@@ -15,10 +15,10 @@ const Footer = () => {
                             <ul>
                                 <li><span>Find us on :</span></li>
                                 <li><a href="#"><img src={helper.ImagePath+"fb.png"} alt="a" className="img-fluid" /></a></li>
-                                <li><a href="#"><img src={helper.ImagePath+"twtr.png"} alt="a" className="img-fluid" /></a></li>
+                                {/* <li><a href="#"><img src={helper.ImagePath+"twtr.png"} alt="a" className="img-fluid" /></a></li> */}
                                 <li><a href="#"><img src={helper.ImagePath+"instagram.png"} alt="a" className="img-fluid" /></a></li>
-                                <li><a href="#"><img src={helper.ImagePath+"linkedin.png"} alt="a" className="img-fluid" /></a></li>
-                            </ul>
+                                {/* <li><a href="#"><img src={helper.ImagePath+"linkedin.png"} alt="a" className="img-fluid" /></a></li> */}
+                            </ul>    
                         </div>
 
                     </div>
@@ -27,11 +27,11 @@ const Footer = () => {
                             <h6>Home</h6>
 
                             <ul>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Ingredients</a></li>
-                                <li><a href="#">How to Use</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">User Reviews</a></li>
+                                <li><a href="#product_buy_sec">Shop</a></li>
+                                <li><a href="#aboutus_section">About</a></li>
+                                <li><a href="#reviews_section">Reviews</a></li>
+                                {/* <li><a href="#">FAQs</a></li>
+                                <li><a href="#">User Reviews</a></li> */}
                             </ul>
                         </div>
                     </div>

@@ -90,10 +90,10 @@
         font-size: 13px;
     }
     .price_midle_txt h5 {
-        font-size: 13px;
+        font-size: 16px;
     }
     .price_midle_txt h5 span {
-        font-size: 13px;
+        font-size: 16px;
     }
     .sold_qty {
         /* margin-bottom : 10% */
@@ -165,6 +165,7 @@
         line-height: 22px;
         width: 90%;
         text-align: left;
+        padding: 8px;
     }
     .sign_up_lft_wrap {
         padding-top: 150px;
@@ -228,7 +229,7 @@
         display: flex;
         align-items: center;
         border: 1px solid #000;
-        padding: 8px 20px;
+        padding: 8px 8px;
     }
     .mobile_sticky .quantity input {
         width: 100%;
@@ -242,7 +243,7 @@
         box-sizing: border-box;
         font-style: normal;
         font-size: 22px;
-        line-height: 35px;
+        line-height: 40px;
         color: #FFFFFF;
         width: 100%;
         display: block;
@@ -599,4 +600,11 @@
 
 .css-cveggr-MuiListItemIcon-root {
     min-width: 35px !important;
+}
+
+.quantity__minus {
+    padding: 10px;
+}
+.quantity__plus {
+    padding: 10px;
 }

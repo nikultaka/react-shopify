@@ -517,7 +517,7 @@ const Product = (props) => {
 
             </div>
             <div className="product_feat_wrap mt-4">
-              <img src={helper.ImagePath + "add_subheading.png"} alt="a" className="img-fluid" />
+              <img src={helper.ImagePath + "transparent.png"} alt="a" className="img-fluid" />
               {/* <ul>
                 <li>
                   <p> <img src={helper.ImagePath + "111+BENEFITS-12.png"} alt="a" className="img-fluid" /></p>
@@ -658,7 +658,7 @@ const Product = (props) => {
                       <p>
                         Step 1 : Pour one sachet of Glow x Grow into 200 ml of water or your favorite drink.<br />
                         Step 2 : Stir/ blend until fully dissolved.<br />
-                        Step 3 : Enjoy your drink and keep Glowing and Growing!.<br />
+                        Step 3 : Enjoy your drink and keep Glowing and Growing!<br />
                         Consume one sachet daily at any time. Best results when taken in the morning on an empty stomach.<br />
                         Recommended Dosage :1 serving per day or as suggested by healthcare professionals.<br />
                         Tastes Like : Lemon and Mint. So refreshing, there’s nothing quite like it!

@@ -40,7 +40,7 @@ const Home = (props) => {
     return (
         <>
             <MobileMenu state={state} toggleDrawer={toggleDrawer} />
-            <Hero  toggleDrawer={toggleDrawer}  isopen={isopen}/>
+            <Hero  toggleDrawer={toggleDrawer}  isopen={isopen} handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId}/>
             <SeeOn />
             <Product product={props.product} handelOnClickBuyNow={props.handelOnClickBuyNow} quantity={props.quantity} setQuantity={props.setQuantity} varientId={props.varientId} setVarientId={props.setVarientId} />
             <Nutrition />

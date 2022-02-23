@@ -139,16 +139,16 @@ const Instagram = () => {
         <section className="instagram_post_sec">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-4">
+                    {/* <div className="col-lg-4">
                         <div className="instagram_btn">
                             <h5>Follow us On Instagram</h5>
-                            {/* <a href={helper.INSTAGRAM_USER_URL} target={'_blank'}><i className="fa fa-instagram"></i>  {helper.INSTAGRAM_USER_NAME}</a> */}
+                            <a href={helper.INSTAGRAM_USER_URL} target={'_blank'}><i className="fa fa-instagram"></i>  {helper.INSTAGRAM_USER_NAME}</a>
                         </div>
-                    </div>
+                    </div> */}
                     {
                         // /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
 
-                            <div className="col-lg-8">
+                            <div className="col-lg-12">
                                 <div className="instagram_posts">
                                     <div data-mc-src="7eaf1ed7-3ad7-402d-933a-a1821ca45af3#instagram"></div>
                                     {/* {instagramPostArray.slice(0, 4).map((postData, i) => {

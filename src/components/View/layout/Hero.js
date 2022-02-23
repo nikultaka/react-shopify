@@ -12,6 +12,7 @@ const Hero = (props) => {
         bottom: '50%',
         position: 'fixed'
     }
+    
     return (
         <section className="hero_section" style={{    zIndex: '0 !important'}}>
             {/* <!-- header section start --> */}
@@ -91,13 +92,13 @@ const Hero = (props) => {
                             <p className="backend_color">Backed with Science,<br />Powered by our Community.</p>
 
                             <div className="hero_bttn">
-                                <a href="#">BUY NOW</a>
+                                <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>BUY NOW</a>
                                 <a href="#"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </section>
     )
 
