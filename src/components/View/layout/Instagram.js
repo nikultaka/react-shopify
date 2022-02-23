@@ -200,20 +200,19 @@ const Instagram = () => {
                     <div className="col-lg-10">
                         <div className="get_start_wrap">
                             <div className="row">
-                                <div className="col-lg-5">
-                                    <div className="get_lft">
+                                <div className="col-lg-12 text-center">
                                         <img src={helper.ImagePath + "logo.svg"} alt="a" className="img-fluid" />
                                         <p>Get Newsletters from Dr. Su</p>
-                                    </div>
                                 </div>
-                                <div className="col-lg-7">
-                                    <div className="get_rgt">
                                         {/* <input type="text" placeholder="Your Email" className="form-control" /> */}
-                                        <div class="klaviyo-form-Y2QSgt"></div>
+                                        
                                         {/* <i className="fa fa-angle-right"></i> */}
-                                    </div>
-                                </div>
                             </div>
+                            <div className="row">
+                                <div className="col-lg-12 text-center">
+                                    <div class="klaviyo-form-Y2QSgt"></div>
+                                </div>
+                            </div>            
                         </div>
                     </div>
                 </div>

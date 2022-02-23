@@ -32,13 +32,13 @@ let helper = {
 if (Mode == "Production") {
 
     helper = {
-        BASE_URL: "http://64.227.189.11/",
-        ImagePath: "http://64.227.189.11/assets/images/",
-        APIKEY: "cd4134a5fa27fad34663d5e1bf65df0b",
-        APIPASSWORD: "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",
-        STORENAME: "nikuls-store",
-        APIVERSION: '2022-01',
-        STORE_FRONT_ACCESS_TOKEN: "a21e4052455010f0bce5743cef8f3615",
+        BASE_URL: "https://drsu.in/",
+        ImagePath: "https://drsu.in/assets/images/",
+        APIKEY: "c74bec68c1938d84bbe739afce03398a",
+        APIPASSWORD: "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",
+        STORENAME: "drsuglowxgrow",
+        APIVERSION: '2022-01',   
+        STORE_FRONT_ACCESS_TOKEN: "1e19948ddbe1de6d0b8294bcf36c5363",
         
         FACEBOOK_APP_ID : "359346392696399",
         FACEBOOK_SECRET_ID : "125bebb8d650a650567936d324a9e0e5",

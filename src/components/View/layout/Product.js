@@ -556,8 +556,8 @@ const Product = (props) => {
                 <h4>₹{varientPrice}</h4>
                 <div className="price_midle_txt">
                   <p>MRP <span>₹1998</span></p>
-                  <h5>You Save <span>₹699</span></h5>
-                  <h6>Inclusive of all Taxes.</h6>
+                  <h5>Save <span>₹699</span></h5>
+                  <h6>Incl. of all taxes</h6>
                 </div>
                 <div className="media sold_qty">
                   {

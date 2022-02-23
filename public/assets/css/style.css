@@ -69,7 +69,8 @@ img{
 
 /*header css  start */
 .hero_section{
-    background-image: url(../images/hero_bg1.jpg);
+    /* background-image: url(../images/hero_bg1.jpg); */
+    background-image: url(../images/desktop_banner.jpg);
     background-size: cover;
     padding-bottom: 100px;
 }
@@ -1163,6 +1164,7 @@ img{
 }
 .ftr_copy{
     margin-top: 10px;
+    font-size: 11px;
 }
 
 .brdr_top{

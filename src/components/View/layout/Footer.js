@@ -8,7 +8,7 @@ const Footer = () => {
                         <div className="ftr_logo">
                             <img src={helper.ImagePath+"ftr_logo.svg"} alt="Logo Footer" className="img-fluid" />
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at feugiat felis. Sed dapibus tincidunt ipsum vitae rhoncus. Pellentesque maximus, velit sed volutpat hendrerit, purus ipsum dignissim quam.</p>
+                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at feugiat felis. Sed dapibus tincidunt ipsum vitae rhoncus. Pellentesque maximus, velit sed volutpat hendrerit, purus ipsum dignissim quam.</p> */}
 
                         </div>
                         <div className="ftr_social">
@@ -47,14 +47,17 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-2 col-6">
+                    <div className="col-lg-2 col-12">
                         <div className="ftr_links">
                             <h6>Contact</h6>
 
                             <ul>
-                                <li><a href="#">Your Address here <br/>Second Address Line</a></li>
-                                <li><a href="#"><strong>Mobile Number</strong></a></li>
-                                <li><a href="#"><strong>Support Email (If Any)</strong></a></li>
+                                <li><a href="#">Maki Cosmetics Pvt Ltd<br />
+                                    A 6, SHR, Borivali West, <br />
+                                    Mumbai 400103.</a>
+                                </li>
+                                {/* <li><a href="#"><strong>Mobile Number</strong></a></li> */}
+                                <li><a href="#"><strong>hello@drsu.in</strong></a></li>
                             </ul>
                         </div>
                     </div>
