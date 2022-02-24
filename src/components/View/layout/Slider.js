@@ -8,17 +8,18 @@ const Slider = () =>{
             {
               (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent)) ?
               <div className="row justify-content-center">
-                <div className="col-lg-10">
+                <div className="col-lg-12 lg-12">
                   <div className="vdo_sliders">
                     <a href="#">
+                      {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
+                      <iframe width="100%" src="https://www.youtube.com/embed/CidUwgLQjo4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </a>
+                    {/* <a href="#">
                       <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/>
                     </a>
                     <a href="#">
                       <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/>
-                    </a>
-                    <a href="#">
-                      <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -34,15 +35,15 @@ const Slider = () =>{
                   <div className="vdo_sliders">
                     <a href="#">
                       {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
-                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/CidUwgLQjo4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </a>
                     <a href="#">
                       {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
-                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </a>
+                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/CidUwgLQjo4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </a>  
                     <a href="#">
                       {/* <img src={helper.ImagePath+"slider_img.svg"} alt="a" className="img-fluid"/> */}
-                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                      <iframe width="100%"  height="300" src="https://www.youtube.com/embed/CidUwgLQjo4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </a>
                   </div>
                 </div>

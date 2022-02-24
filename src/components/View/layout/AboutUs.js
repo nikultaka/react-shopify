@@ -16,7 +16,7 @@ const AboutUs = () => {
                 <source src="https://www.youtube.com/watch?v=TOl1_W4cpc8" type="video/mp4"/>
                   </video> */}
 
-              <iframe width="100%"  height="300" src="https://www.youtube.com/embed/TOl1_W4cpc8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe width="100%"  height="300" src="https://www.youtube.com/embed/MkwPQsaE86c" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
             </div>
           </div>

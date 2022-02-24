@@ -546,7 +546,7 @@ const Product = (props) => {
             <div className="product_buy_txt_wrap">
               <div className="review_txt_wrap">
                 <p><img src={helper.ImagePath + "5star.png"} alt="a" className="img-fluid" /> 
-                   <span className="review_title">from 1611 Reviews</span>
+                   {/* <span className="review_title">from 1611 Reviews</span> */}
                 </p>
               </div>
               <div className="product_title_wrap">

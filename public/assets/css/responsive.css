@@ -202,7 +202,8 @@
     }
     .hero_section {
         /* background-image: url(../images/MOB.jpg); */
-        background-image: url(../images/header_img_3.jpg);
+        background-image: url(../images/header_img_6.jpg);
+        padding-bottom: 234px !important;
     }
     .mobile_menu_sec .iconss img {
         width: 35px;

@@ -70,7 +70,7 @@ const Hero = (props) => {
                                 <li><a class="dropdown-item" href="#aboutus_section">About</a></li>
                                 <li><a class="dropdown-item" href="#reviews_section">Reviews</a></li>
                             </div> */}
-                            <i class="fa fa-bars fa-1"  style={{ paddingTop : '8px' }} onClick={props.toggleDrawer('right', true)}></i>
+                            <i class="fa fa-bars fa-1"  style={{ paddingTop : '8px',paddingLeft : '30%',color : 'darkgreen' }} onClick={props.toggleDrawer('right', true)}></i>
 
                         </a>
 
@@ -86,16 +86,30 @@ const Hero = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <div className="hero_txt">
-                            {/* <h6>Introducing Dr Su’s Glow x Grow</h6> */}
-                            <h1>The highest <br /> standards of <br />Nutrition.</h1>
-                            <p className="backend_color">Backed with Science,<br />Powered by our Community.</p>
+                        
+                          
 
-                            <div className="hero_bttn">
-                                <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>BUY NOW</a>
-                                <a href="#"></a>
-                            </div>
-                        </div>
+                            {
+                                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ? 
+                                <div className="hero_txt">
+                                    <h1 style={{ display:'none' }}>The highest <br /> standards of <br />Nutrition.</h1>
+                                    <p className="backend_color" style={{ display:'none' }}>Backed with Science,<br />Powered by our Community.</p>
+                                    <div className="hero_bttn" style={{ display:'none' }}>
+                                        <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>BUY NOW</a>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                                :
+                                <div className="hero_txt">
+                                    <h1>The highest <br /> standards of <br />Nutrition.</h1>
+                                    <p className="backend_color" >Backed with Science,<br />Powered by our Community.</p>
+                                    <div className="hero_bttn">
+                                        <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>BUY NOW</a>
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            }
+                            
                     </div>
                 </div>
             </div> 

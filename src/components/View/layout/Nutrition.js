@@ -129,7 +129,7 @@ const Nutrition = () => {
                       </div>
                     </div>
                     <div class="placed_img margin_btm text-center ">
-                      <img src={helper.ImagePath + "RedefineNutrition.png"} alt="a" className="img-fluid" style={{ backgroundColor: "#41a0e1", borderRadius: "12px" }} />
+                      <img src={helper.ImagePath + "red_nut.png"} alt="a" className="img-fluid" style={{ backgroundColor: "#41a0e1", borderRadius: "12px" }} />
                     </div>
                     <div class="nutrition_feat_box margin_left_2 margin_btm_2">
                       <div class="media">

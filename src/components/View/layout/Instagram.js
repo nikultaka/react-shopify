@@ -150,7 +150,7 @@ const Instagram = () => {
 
                             <div className="col-lg-12">
                                 <div className="instagram_posts">
-                                    <div data-mc-src="7eaf1ed7-3ad7-402d-933a-a1821ca45af3#instagram"></div>
+                                <div data-mc-src="4132d2df-0717-43fd-abc9-1958c9951c8e#instagram"></div>
                                     {/* {instagramPostArray.slice(0, 4).map((postData, i) => {
                                         return (
                                             <>

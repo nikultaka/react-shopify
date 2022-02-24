@@ -16,7 +16,7 @@ const Footer = () => {
                                 <li><span>Find us on :</span></li>
                                 <li><a href="#"><img src={helper.ImagePath+"fb.png"} alt="a" className="img-fluid" /></a></li>
                                 {/* <li><a href="#"><img src={helper.ImagePath+"twtr.png"} alt="a" className="img-fluid" /></a></li> */}
-                                <li><a href="#"><img src={helper.ImagePath+"instagram.png"} alt="a" className="img-fluid" /></a></li>
+                                <li><a href="https://instagram.com/drsuglowxgrow?utm_medium=copy_link" target="_blank"><img src={helper.ImagePath+"instagram.png"} alt="a" className="img-fluid" /></a></li>
                                 {/* <li><a href="#"><img src={helper.ImagePath+"linkedin.png"} alt="a" className="img-fluid" /></a></li> */}
                             </ul>    
                         </div>
@@ -40,10 +40,10 @@ const Footer = () => {
                             <h6>Legal</h6>
 
                             <ul>
-                                <li><a href="#">Terms of Service</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Refund Policy</a></li>
-                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="/terms.html" target="_blank">Terms of Service</a></li>
+                                <li><a href="/privacy.html" target="_blank">Privacy Policy</a></li>
+                                <li><a href="/refund.html" target="_blank">Refund Policy</a></li>
+                                <li><a href="/shipping.html" target="_blank">Shipping Policy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -52,9 +52,7 @@ const Footer = () => {
                             <h6>Contact</h6>
 
                             <ul>
-                                <li><a href="#">Maki Cosmetics Pvt Ltd<br />
-                                    A 6, SHR, Borivali West, <br />
-                                    Mumbai 400103.</a>
+                                <li><a href="#">Maki Cosmetics Pvt Ltd</a>
                                 </li>
                                 {/* <li><a href="#"><strong>Mobile Number</strong></a></li> */}
                                 <li><a href="#"><strong>hello@drsu.in</strong></a></li>
