@@ -357,7 +357,7 @@ const Product = (props) => {
   // const [quantity, setQuantity] = useState(1);
   const [checkedVal, setCheckedVal] = useState(0);
   const [varientPrice, setVarientPrice] = useState(0);
-  const [soldVal, setSoldVal] = useState(localStorage.getItem('soldItems') ? localStorage.getItem('soldItems') : randomNumber(50, 100));
+  const [soldVal, setSoldVal] = useState(localStorage.getItem('soldItems') ? localStorage.getItem('soldItems') : randomNumber(150, 180));
   const [selectedSlide, setSelectedSlide] = useState(0);
 
   // const [varientId, setVarientId] = useState();
