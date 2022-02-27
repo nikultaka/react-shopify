@@ -413,8 +413,8 @@ const Product = (props) => {
   var start = delay - (now.getMinutes() *   60 + now.getSeconds()) *  1000 + now.getMilliseconds();
 
   setTimeout(function doSomething() {
-    localStorage.setItem('soldItems', randomNumber(50, 100))
-    setSoldVal(randomNumber(50, 100))
+    localStorage.setItem('soldItems', randomNumber(150, 180))
+    setSoldVal(randomNumber(150, 180))
     setTimeout(doSomething, delay);
   }, start)
 
