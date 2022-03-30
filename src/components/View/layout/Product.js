@@ -559,7 +559,8 @@ const Product = (props) => {
                   <h5>Save <span>₹699</span></h5>
                   <h6>Incl. of all taxes</h6>
                 </div>
-                <div className="media sold_qty">
+                <div className="media sold_qty"></div>
+                {/* <div className="media sold_qty">
                   {
                     (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent)) ?
                       <img src={helper.ImagePath + "amp.png"} alt="a" style={{ width:'20px' }} className="img-fluid" />
@@ -571,7 +572,7 @@ const Product = (props) => {
                     <h6>{soldVal} Sold</h6>
                     <p className="last_one">in the last 1 hour</p>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="product_pick_wrap">
                 {/* <h5>In a dolor sed velit semper finibus. Praesent consectetur.</h5> */}
