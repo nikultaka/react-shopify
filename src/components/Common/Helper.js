@@ -1,4 +1,4 @@
-const Mode = "Production"
+const Mode = "Production" 
 
 
 let helper = {
@@ -34,6 +34,8 @@ if (Mode == "Production") {
     helper = {
         BASE_URL: "https://drsu.in/",
         ImagePath: "https://drsu.in/assets/images/",
+        //BASE_URL: "http://localhost:3000",
+        //ImagePath: "http://localhost:3000/assets/images/",
         APIKEY: "c74bec68c1938d84bbe739afce03398a",
         APIPASSWORD: "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",
         STORENAME: "drsuglowxgrow",

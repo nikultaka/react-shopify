@@ -95,7 +95,7 @@ const Hero = (props) => {
                                     <h1 style={{ display:'none' }}>The highest <br /> standards of <br />Nutrition.</h1>
                                     <p className="backend_color" style={{ display:'none' }}>Backed with Science,<br />Powered by our Community.</p>
                                     <div className="hero_bttn" style={{ display:'none' }}>
-                                        <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>BUY NOW</a>
+                                        <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>SOLD OUT</a>
                                         <a href="#"></a>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@ const Hero = (props) => {
                                     <h1>The highest <br /> standards of <br />Nutrition.</h1>
                                     <p className="backend_color" >Backed with Science,<br />Powered by our Community.</p>
                                     <div className="hero_bttn">
-                                        <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>BUY NOW</a>
+                                        <a href="javascript:void(0);" onClick={() => props.handelOnClickBuyNow(props.varientId, props.quantity)}>SOLD OUT</a>
                                         <a href="#"></a>
                                     </div>
                                 </div>

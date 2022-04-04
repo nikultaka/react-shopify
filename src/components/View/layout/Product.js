@@ -286,7 +286,7 @@
 //                     </div>
 //                   </div>
 //                   <div className="col-lg-8">
-//                     <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)} className="product_buy_btn">BUY NOW</a>
+//                     <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)} className="product_buy_btn">SOLD OUT</a>
 //                     {/* <a href="#" className="product_buy_btn_2"><img src={helper.ImagePath + "lock_icon.svg"} alt="a" className="img-fluid" /></a> */}
 //                   </div>
 //                 </div>
@@ -351,6 +351,7 @@
 import helper from "../../Common/Helper";
 import react, { useState, useEffect } from "react";
 import Slider from "react-slick";
+
 
 const Product = (props) => {
   let product = props.product;
@@ -458,7 +459,7 @@ const Product = (props) => {
               {
                 /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent) ?
                 <Slider {...settings}>
-                {product && product.images?.length > 0 &&
+                {product && product.images?.length > 0  ?
                   product.images.map((img, key2) => {
                     return (
                       <div key={key2} className={key2 == 0 ? "tab-pane fade show active" : "tab-pane fade show"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
@@ -466,13 +467,17 @@ const Product = (props) => {
                     </div>
                     )
                   })
+                  : 
+                  <div key="0" className="tab-pane fade show active" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0">
+                      <img src={helper.ImagePath +"sold_out.jpeg"} alt="a" className="img-fluid" style={{ borderRadius : '10px' }} />
+                  </div>
 
                 }
               </Slider>
               :
               <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <Slider {...settings}>
-                {product && product.images?.length > 0 &&
+                {product && product.images?.length > 0  ?
                   product.images.map((img, key1) => {
                     return (
                       <a className={selectedSlide == key1 ? "nav-link mr-5 " : "nav-link mr-5"} key={key1} id="v-pills-home-tab" data-toggle="pill" href={"#v-pills-" + key1} role="tab" aria-controls={"v-pills-" + key1} aria-selected="true" onClick={()=>setSelectedSlide(key1)}>
@@ -480,6 +485,12 @@ const Product = (props) => {
                       </a>
                     )
                   })
+
+                  : 
+                  <a className="nav-link mr-5" key="0" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-0" role="tab" aria-controls="v-pills-0" aria-selected="true">
+                        <img src={helper.ImagePath +"sold_out.jpeg"} alt="a" className="img-fluid mr-5" />
+                  </a>
+
 
                 }
               </Slider>
@@ -493,7 +504,7 @@ const Product = (props) => {
           <div className="col-lg-5">
             <div className="product_buy_imgs">
               <div className="tab-content" id="v-pills-tabContent">
-                {product && product.images?.length > 0 &&
+                {product && product.images?.length > 0  ?
                   product.images.map((img, key2) => {
                     return (
                       <div key={key2} className={key2 == 0 ? "tab-pane fade show active" : "tab-pane fade show"} id={"v-pills-" + key2} role="tabpanel" aria-labelledby={"v-pills-" + key2}>
@@ -502,6 +513,12 @@ const Product = (props) => {
                     )
 
                   })
+
+                  :
+                  <div key="0" className="tab-pane fade show active ml-5" id="v-pills-0" role="tabpanel" aria-labelledby="v-pills-0">
+                      <img src={helper.ImagePath +"sold_out.jpeg"} alt="a" className="img-fluid"  style={{borderRadius: '10px'}}/>
+                  </div>
+
                 }
 
                 {/* <div className="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -620,7 +637,7 @@ const Product = (props) => {
                     </div>
                   </div>
                   <div className="col-lg-8">
-                    <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)} className="product_buy_btn">BUY NOW</a>
+                    <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)} className="product_buy_btn">SOLD OUT</a>
                   </div>
                 </div>
               </div>

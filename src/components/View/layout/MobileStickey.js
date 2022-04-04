@@ -44,7 +44,7 @@ const MobileStickey = (props) => {
                         <input name="quantity" type="text" readOnly className="quantity__input" value={quantity} />
                         <i className="fa fa-plus quantity__plus" style={{ cursor : 'pointer' }} onClick={() => plusValue(quantity)}></i>
                     </div>
-                    <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)}>BUY NOW</a>
+                    <a href="javascript:void(0)" onClick={() => props.handelOnClickBuyNow(varientId, quantity)}>SOLD OUT</a>
                 </div>
 
             </div>
